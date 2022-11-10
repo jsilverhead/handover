@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>Аннечкин Бухометр v0.9</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        i {
+            font-size: 200%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .bararea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .buhbar {
+            display: flex;
+            background-color: #00A36C;
+            width: 2px;
+            height: 20px;
+        }
+
+        .barbig {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: dimgray;
+            width: 400px;
+            height: 30px;
+        }
+
+        .barback {
+            display: flex;
+            justify-content: flex-start;
+            padding: 2px;
+            background-color: darkgrey;
+            width: 390px;
+            height: 20px;
+        }
+
+        .btnyes {
+            background-color: #f0d35c;
+            width: 120px;
+            height: 36px;
+            border: 0;
+            border-radius: 8px 8px 20px 8px;
+            box-shadow: -1px 2px 0px black;
+            position: relative;
+            cursor: grab;
+        }
+
+        .btnyes:hover {
+            background-color: #b7a40a;
+        }
+
+        .btnno {
+            background-color: #f0d35c;
+            width: 120px;
+            height: 36px;
+            border: 0;
+            border-radius: 8px 8px 8px 20px;
+            box-shadow: 1px 2px 0px black;
+            position: relative;
+            left: 2px;
+            cursor: grab;
+        }
+
+        .btnno:hover {
+            background-color: #b7a40a;
+        }
+
+        .btnyes:active {
+            cursor: grabbing;
+        }
+
+        .btnno:active {
+            cursor: grabbing;
+        }
+
+        #bars {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d5338c405b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Аннечкин Бухометр</h1>
+    <div class="bararea">
+        <span><b>Выпить ещё?</b></span><br>
+        <br>
+        <div id="bars">
+            <div id="beer"><i class="fas fa-beer"></i></div>
+            <div class="barbig">
+                <div class="barback">
+                    <div class="buhbar" id="buhbar"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <span id="meter">Выпито: 0л</span>
+        <br>
+        <div><button type="submit" class="btnyes" id="yes">Да</button> <button type="submit" class="btnno"
+                id="no">Нет</button></div>
+        <br>
+        <span id="alerts"></span>
+
+    </div>
+    <script>
+        const textMeter = document.querySelector('#meter');
+        const buhbar = document.querySelector('#buhbar');
+        const alerts = document.querySelector('#alerts');
+        const yesBtn = document.querySelector('#yes');
+        const noBtn = document.querySelector('#no');
+        const glass = document.querySelector('i');
+
+        let drink = 0; //количество выпитых бокалов
+        let siz = 0; //размер прогресс-бара
+
+        function buhyes() { //если выбрать "да"
+            if (drink <= 4) {
+                drink++;
+                textMeter.textContent = `Выпито: ${drink / 2} л`; //добавляем 0.5 литров
+                siz += 80; // увеличиваем размер прогресс-бара
+                buhbar.style.width = siz + 'px';
+            }
+            if (drink === 3) { //ты пьяна, иди домой
+                buhbar.style.backgroundColor = 'blue';
+            }
+            if (drink === 4) { //Больше пить не можно
+                alerts.textContent = 'Ты куда?';
+            }
+            if (drink === 5) { //Аня, ты перепила
+                buhbar.style.backgroundColor = 'red';
+                alerts.textContent = 'Пока!';
+                yesBtn.style.left = (Math.floor(Math.random() * 400)) + 'px';
+                yesBtn.style.top = (Math.floor(Math.random() * 400)) + 'px';
+
+                yesBtn.addEventListener('mouseover', () => {
+                    yesBtn.style.left = (Math.floor(Math.random() * 400)) + 'px';
+                    yesBtn.style.top = (Math.floor(Math.random() * 400)) + 'px';
+                })
+            }
+        }
+
+        function buhno() {
+            alerts.textContent = 'Молодец!';
+
+            let seconds = 0;
+            let opacity = 100;
+
+            const disapear = setInterval(() => {
+
+                seconds++;
+                if (seconds === 1) alerts.style.opacity = `50`;
+
+                if (seconds === 2) {
+                    alerts.style.opacity = '0';
+                    alerts.textContent = '';
+                    alerts.style.opacity = '100';
+                    clearInterval(disapear);
+                }
+            }, 1000);
+        };
+
+        function glassRotate() {
+            const hopadrink = glass.animate([
+                { transform: 'rotate(0)' },
+                { transform: 'rotate(45deg)' },
+                { transform: 'rotate(0)' },
+                { transform: 'rotate(60deg)' },
+                { transform: 'rotate(0)' }
+            ], {
+                duration: 700
+            });
+        }
+
+        yesBtn.addEventListener('click', buhyes);
+        yesBtn.addEventListener('mouseenter', glassRotate)
+        noBtn.addEventListener('click', buhno);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function openNews() {
+            window.open("#", "_self");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logoarea"><a class="logo" href="#">COFFEHOUSE</a></div>
+            <nav class="headermenu">
+                <ul class="headernav">
+                    <li><a class="nav" href="#main">HOME</a></li>
+                    <li><a class="nav" href="#story">STORY</a></li>
+                    <li><a class="nav" href="#blog">BLOG</a></li>
+                    <li><a class="nav" href="#subscribe">SUBSCRIBE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main" class="mainblock">
+            <div class="h1">
+                <h1>TAKE YOUR TIME</h1>
+            </div>
+            <div class="brownbox"></div>
+        </div>
+        <div id="story" class="story">
+            <h2>STORY</h2>
+            <div class="storycontent">
+                <img src="https://source.unsplash.com/X4RJG4aNi8o/1920x1080" class="storypic">
+                <p class="storytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu
+                    quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit
+                    eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan
+                    dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget
+                    pulvinar nunc, eget pharetra risus.</p>
+            </div>
+        </div>
+        <div id="blog" class="blog">
+            <h2>BLOG</h2>
+            <div class="blogcontent">
+                <div class="news" onclick="openNews()">
+                    <h3>Daily Coffee News</h3>
+                    <img src="https://source.unsplash.com/TYIzeCiZ_60/1920x1080" class="newspic">
+                    <p class="newscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget
+                        arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                        elit eleifend euismod.</p>
+                </div>
+                <div class="news" onclick="openNews()">
+                    <h3>Dutch Coffee Chains</h3>
+                    <img src="https://source.unsplash.com/CSQQ6_T0sks/1920x1080" class="newspic">
+                    <p class="newscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget
+                        arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                        elit eleifend euismod.</p>
+                </div>
+                <div class="news hidden" onclick="openNews()">
+                    <h3>Start Up In Minneapolis</h3>
+                    <img src="https://source.unsplash.com/9rTEwV_G0Do/1920x1080" class="newspic">
+                    <p class="newscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget
+                        arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac
+                        elit eleifend euismod.</p>
+                </div>
+            </div>
+        </div>
+        <div id="subscribe" class="subscribe">
+            <h2>SUBSCRIBE</h2>
+            <form action="">
+                <div class="form">
+                    <input type="email" placeholder="enter your email" class="formemail" name="email">
+                    <input type="submit" class="formsubmit" value="submit" name="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="copyright">© COPYRIGHT 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
