@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>CoffeHouse v2</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>COFFEHOUSE</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="names">
+                <input type="text" name="firstname" id="firstname" placeholder="Имя" class="clientinfo"> <input
+                    type="text" name="lastname" id="lastname" placeholder="Фамилия" class="clientinfo">
+            </div>
+            <div class="orders">
+                <div class="column1">
+                    <div class="row"><label class="label">Эспрессо 80р.<input type="checkbox" name="order" value="80"
+                                id="1order"><span class="pressed"></span></label> <input type="number" name="order1-num"
+                            id="order1-num" class="numbers" min="0" value="0" data-check="1"></div><br>
+                    <div class="row"><label class="label">Американо 110р.<input type="checkbox" name="order" value="110"
+                                id="2order"><span class="pressed"></span></label> <input type="number" name="order2-num"
+                            id="order2-num" class="numbers" min="0" value="0" data-check="2"></div><br>
+                    <div class="row"><label class="label">Латте 120р.<input type="checkbox" name="order" value="120"
+                                id="3order"><span class="pressed"></span></label> <input type="number" name="order3-num"
+                            id="order3-num" class="numbers" min="0" value="0" data-check="3"></div><br>
+                    <div class="row"><label class="label">Капучино 90р.<input type="checkbox" name="order" value="90"
+                                id="4order"><span class="pressed"></span></label> <input type="number" name="order4-num"
+                            id="order4-num" class="numbers" min="0" value="0" data-check="4"></div><br>
+                </div>
+                <div class="column2">
+                    <div class="row"><label class="label">Шоколадный кекс 80р.<input type="checkbox" name="order"
+                                value="80" id="5order"><span class="pressed"></span></label> <input type="number"
+                            name="order4-num" id="order5-num" class="numbers" min="0" value="0" data-check="5"></div>
+                    <br>
+                    <div class="row"><label class="label">Черничный кекс 90р.<input type="checkbox" name="order"
+                                value="90" id="6order"><span class="pressed"></span></label> <input type="number"
+                            name="order5-num" id="order6-num" class="numbers" min="0" value="0" data-check="6"></div>
+                    <br>
+                    <div class="row"><label class="label">Яблочный тарт 100р.<input type="checkbox" name="order"
+                                value="100" id="7order"><span class="pressed"></span></label> <input type="number"
+                            name="order6-num" id="order7-num" class="numbers" min="0" value="0" data-check="7"></div>
+                    <br>
+                </div>
+            </div>
+            <div class="results">
+                <p>Итого: <span id="result">0 р.</span></p>
+                <button id="btn" class="btn">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+    <script src="core.js"></script>
+</body>
+
+</html>
