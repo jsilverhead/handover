@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Аннечкин Бухометр v0.9</title>
+    <meta charset="utf-8">
     <style>
         * {
             font-family: 'Roboto', sans-serif;
@@ -93,6 +93,7 @@
             flex-direction: row;
         }
     </style>
+    <title>Аннечкин Бухометр v0.9</title>
     <script src="https://kit.fontawesome.com/d5338c405b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -120,79 +121,7 @@
         <span id="alerts"></span>
 
     </div>
-    <script>
-        const textMeter = document.querySelector('#meter');
-        const buhbar = document.querySelector('#buhbar');
-        const alerts = document.querySelector('#alerts');
-        const yesBtn = document.querySelector('#yes');
-        const noBtn = document.querySelector('#no');
-        const glass = document.querySelector('i');
-
-        let drink = 0; //количество выпитых бокалов
-        let siz = 0; //размер прогресс-бара
-
-        function buhyes() { //если выбрать "да"
-            if (drink <= 4) {
-                drink++;
-                textMeter.textContent = `Выпито: ${drink / 2} л`; //добавляем 0.5 литров
-                siz += 80; // увеличиваем размер прогресс-бара
-                buhbar.style.width = siz + 'px';
-            }
-            if (drink === 3) { //ты пьяна, иди домой
-                buhbar.style.backgroundColor = 'blue';
-            }
-            if (drink === 4) { //Больше пить не можно
-                alerts.textContent = 'Ты куда?';
-            }
-            if (drink === 5) { //Аня, ты перепила
-                buhbar.style.backgroundColor = 'red';
-                alerts.textContent = 'Пока!';
-                yesBtn.style.left = (Math.floor(Math.random() * 400)) + 'px';
-                yesBtn.style.top = (Math.floor(Math.random() * 400)) + 'px';
-
-                yesBtn.addEventListener('mouseover', () => {
-                    yesBtn.style.left = (Math.floor(Math.random() * 400)) + 'px';
-                    yesBtn.style.top = (Math.floor(Math.random() * 400)) + 'px';
-                })
-            }
-        }
-
-        function buhno() {
-            alerts.textContent = 'Молодец!';
-
-            let seconds = 0;
-            let opacity = 100;
-
-            const disapear = setInterval(() => {
-
-                seconds++;
-                if (seconds === 1) alerts.style.opacity = `50`;
-
-                if (seconds === 2) {
-                    alerts.style.opacity = '0';
-                    alerts.textContent = '';
-                    alerts.style.opacity = '100';
-                    clearInterval(disapear);
-                }
-            }, 1000);
-        };
-
-        function glassRotate() {
-            const hopadrink = glass.animate([
-                { transform: 'rotate(0)' },
-                { transform: 'rotate(45deg)' },
-                { transform: 'rotate(0)' },
-                { transform: 'rotate(60deg)' },
-                { transform: 'rotate(0)' }
-            ], {
-                duration: 700
-            });
-        }
-
-        yesBtn.addEventListener('click', buhyes);
-        yesBtn.addEventListener('mouseenter', glassRotate)
-        noBtn.addEventListener('click', buhno);
-    </script>
+    <script src="core.js"></script>
 </body>
 
 </html>
