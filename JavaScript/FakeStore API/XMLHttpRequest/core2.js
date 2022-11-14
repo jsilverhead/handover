@@ -18,11 +18,8 @@ function createRequest(
 
   xhr.open(method, url);
 
-  if (body) {
-    xhr.send(body);
-  } else {
-    xhr.send();
-  }
+  if (body) xhr.send(body);
+  else xhr.send();
 
   return xhr;
 }
