@@ -1,31 +1,25 @@
 const API_URL = 'https://fakestoreapi.com';
 
-function createRequest(
-  method,
-  url,
-  body,
-  onSucces = () => {},
-  onError = () => {}
-) {
-  const xhr = new XMLHttpRequest();
+function createRequest(method, url, body) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
 
-  xhr.addEventListener('load', function () {
-    onSucces(xhr);
+    xhr.addEventListener('load', function () {
+      resolve(xhr);
+    });
+    xhr.addEventListener('error', function () {
+      reject(xhr);
+    });
+
+    xhr.open(method, url);
+
+    if (body) xhr.send(body);
+    else xhr.send();
   });
-  xhr.addEventListener('error', function () {
-    onError(xhr);
-  });
-
-  xhr.open(method, url);
-
-  if (body) xhr.send(body);
-  else xhr.send();
-
-  return xhr;
 }
 
 class API {
-  addToCart(productID, onSucces, onError) {
+  addToCart(productID) {
     const body = JSON.stringify({
       userID: 1,
       date: '2022-14-11',
@@ -36,17 +30,15 @@ class API {
         },
       ],
     });
-    createRequest('POST', `${API_URL}/carts/5`, body, onSucces, onError);
+    return createRequest('POST', `${API_URL}/carts/5`, body);
   }
 
-  getList(params = {}, onSucces, onError) {
+  getList(params = {}) {
     const queryparams = new URLSearchParams(params);
-    createRequest(
+    return createRequest(
       'GET',
       `${API_URL}/products?${queryparams.toString()}`,
-      null,
-      onSucces,
-      onError
+      null
     );
   }
 }
@@ -60,9 +52,9 @@ function handleError() {
 window.addEventListener('load', function () {
   const itemlist = this.document.querySelector('#products');
 
-  api.getList(
-    { limit: 10 },
-    function (xhr) {
+  api
+    .getList({ limit: 10 })
+    .then((xhr) => {
       if (xhr.status === 200) {
         const products = JSON.parse(xhr.response);
 
@@ -78,22 +70,20 @@ window.addEventListener('load', function () {
           item.append(toCart);
         });
       }
-    },
-    handleError
-  );
+    })
+    .catch(handleError);
 
   itemlist.addEventListener('click', function (e) {
     if (e.target.tagName === 'BUTTON') {
       e.target.disabled = 'true';
-      api.addToCart(
-        e.target.getAttribute('data-product-id'),
-        function () {
+      api
+        .addToCart(e.target.getAttribute('data-product-id'))
+        .then(() => {
           e.target.textContent = 'Добавлено';
-        },
-        function () {
+        })
+        .catch(() => {
           e.target.disabled = 'false';
-        }
-      );
+        });
     }
   });
 });
