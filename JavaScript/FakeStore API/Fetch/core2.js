@@ -26,8 +26,8 @@ class API {
 
 const api = new API();
 
-function handleError() {
-  alert('Ошибка');
+function handleError(error) {
+  alert('Ошибка:', error);
 }
 
 window.addEventListener('load', function () {
