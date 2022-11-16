@@ -35,38 +35,41 @@ function handleError(error) {
   alert('Ошибка:', error);
 }
 
+async function renderList() {
+  try {
+    const itemlist = document.querySelector('#products');
+    const products = await api.getList({ limit: 10 });
+
+    products.forEach((product) => {
+      const item = document.createElement('li');
+      const toCart = document.createElement('button');
+      item.classList.add('items');
+      toCart.classList.add('toCart');
+      item.textContent = `${product.title} `;
+      toCart.textContent = 'Добавить в корзину';
+      toCart.setAttribute('data-product-id', product.id);
+      itemlist.append(item);
+      item.append(toCart);
+    });
+  } catch (error) {
+    handleError(error);
+  }
+}
+
 window.addEventListener('load', function () {
+  renderList();
+
   const itemlist = this.document.querySelector('#products');
 
-  api
-    .getList({ limit: 10 })
-    .then((response) => response.json())
-    .then((products) => {
-      products.forEach((product) => {
-        const item = document.createElement('li');
-        const toCart = document.createElement('button');
-        item.classList.add('items');
-        toCart.classList.add('toCart');
-        item.textContent = `${product.title} `;
-        toCart.textContent = 'Добавить в корзину';
-        toCart.setAttribute('data-product-id', product.id);
-        itemlist.append(item);
-        item.append(toCart);
-      });
-    })
-    .catch(handleError);
-
-  itemlist.addEventListener('click', function (e) {
+  itemlist.addEventListener('click', async function (e) {
     if (e.target.tagName === 'BUTTON') {
-      e.target.disabled = 'true';
-      api
-        .addToCart(e.target.getAttribute('data-product-id'))
-        .then(() => {
-          e.target.textContent = 'Добавлено';
-        })
-        .catch(() => {
-          e.target.disabled = 'false';
-        });
+      try {
+        e.target.disabled = 'true';
+        await api.addToCart(e.target.getAttribute('data-product-id'));
+        e.target.textContent = 'Добавлено';
+      } catch {
+        e.target.disabled = 'false';
+      }
     }
   });
 });
