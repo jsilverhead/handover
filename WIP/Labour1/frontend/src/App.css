@@ -1,0 +1,253 @@
+body {
+  background-color: #f5f4f6;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 4px gray;
+  margin-bottom: 20px;
+}
+.headerInner {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 1024px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: 8px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountBtn {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.accountBtn:hover {
+  cursor: pointer;
+}
+
+.accountBtn img {
+  width: 30px;
+  height: 30px;
+}
+
+.registration {
+  background-color: #fff;
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  border: none;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.registration label {
+  margin-top: 10px;
+}
+
+.filledBtn {
+  color: white;
+  font-weight: bold;
+  background-color: #483d8b;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.filledBtn:hover {
+  cursor: pointer;
+}
+
+.hollowBtn {
+  background: #fff;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.hollowBtn:hover {
+  cursor: pointer;
+}
+
+.registration div {
+  display: flex;
+  justify-content: center;
+}
+
+.registration .input {
+  border: 1px solid slategray;
+  border-radius: 6px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.registration .error {
+  border: 1px solid red;
+  border-radius: 6px;
+  width: 200px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1024px;
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.housecard {
+  background-color: #fff;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 20px;
+}
+.himg {
+  width: 320px;
+  height: 280px;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+.housecard div {
+  padding: 6px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login input {
+  border: 1px solid slategray;
+  border-radius: 6px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.filters {
+  width: 280px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.fhat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  background-color: #E8E8E8;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+.prices, .spaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+.types {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.types select{
+  width: 100px;
+  border: 1px solid slategray;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.minmax {
+  border: 1px solid slategray;
+  border-radius: 6px;
+  width: 100px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.searchInp {
+  border: 1px solid slategray;
+  border-radius: 6px;
+  width: 200px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.houselink {
+  color: black;
+  text-decoration: none;
+}
+.innercard {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin: auto;
+  padding: 20px;
+}
+.innerpic {
+  width: 600px;
+  height: 480px;
+  margin: auto;
+}

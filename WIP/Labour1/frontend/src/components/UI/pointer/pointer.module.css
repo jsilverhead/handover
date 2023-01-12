@@ -1,0 +1,32 @@
+.pointer {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.pointer:hover {
+    animation: scale 1s infinite;
+}
+
+.address{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.address:hover .pointer {
+    animation: scale 1s infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,9 @@
+.errorlist {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.errorlist p {
+    color: red;
+    font-size: small;
+}
