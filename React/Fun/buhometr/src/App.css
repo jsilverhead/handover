@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.centerall {
+  margin: auto;
+  text-align: center;
+}
+.yesBtn {
+  background-color: #ffb347;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 1px 1px lightgray;
+  border-radius: 6px 6px 20px 6px;
+  padding: 12px;
+  width: 80px;
+}
+.noBtn {
+  background-color: #ffb347;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 1px 1px lightgray;
+  border-radius: 6px 6px 6px 20px;
+  padding: 12px;
+  width: 80px;
+}
+.yesBtn:active, .noBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 2px 2px lightgray;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 180px;
+  margin: auto;
+}
+.pos1 {
+  left: 12px;
+  top: 120px;
+}
