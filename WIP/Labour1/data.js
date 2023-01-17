@@ -27,8 +27,6 @@ dbConnect();
 app.use(express.json()); // allow to read json
 app.use(cors());
 
-app.use('api/auth/', authRoute);
-
 // REGISTRATION
 app.post(
   '/auth/registration',

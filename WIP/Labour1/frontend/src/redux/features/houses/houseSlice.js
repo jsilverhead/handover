@@ -1,27 +1,38 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import server from '../../../utilites/connection';
+
+const URI = '/';
 
 const initialState = {
-  houses: [],
+  houses: {
+    items: [],
+    status: null,
+  },
 };
 
-export const getHouses = createAsyncThunk(
-  'houses/getHouses',
-  async (_, { rejectWithValue, dispatch }) => {
-    const res = await axios.get(URI);
-    dispatch(loadhouses(res.data));
-  }
-);
+export const getHouses = createAsyncThunk('houses/getHouses', async () => {
+  const res = await server.get(URI);
+  return res.data;
+});
 
 export const houseSlice = createSlice({
   name: 'houses',
   initialState,
-  reducers: {
-    loadhouses: (state, action) => {
-      state.houses = action.payload;
+  reducers: {},
+  extraReducers: {
+    [getHouses.pending]: (state, action) => {
+      state.houses.items = [];
+      state.houses.status = 'loading';
+    },
+    [getHouses.fulfilled]: (state, action) => {
+      state.houses.items = action.payload;
+      state.houses.status = 'complete';
+    },
+    [getHouses.rejected]: (state, action) => {
+      state.houses.items = [];
+      state.houses.status = 'error';
     },
   },
 });
 
-export const { loadhouses } = houseSlice.actions;
 export default houseSlice.reducer;

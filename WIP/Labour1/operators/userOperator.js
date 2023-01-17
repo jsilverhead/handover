@@ -2,6 +2,7 @@ import UserModel from '../models/user.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
+// USER REGISTRATION
 export const registration = async (req, res) => {
   try {
     // Hashing password
@@ -11,22 +12,22 @@ export const registration = async (req, res) => {
 
     // Creating document
     const doc = new UserModel({
-      name: req.body.name,
+      userName: req.body.userName,
       email: req.body.email,
       phone: req.body.phone,
       passwordHash: hashed,
     });
 
-    // Saving user to a db
-    const user = await doc.save();
-
     const token = jwt.sign(
       {
-        _id: user._id,
+        _id: newUser._id,
       },
       'key',
       { expiresIn: '14d' }
     );
+
+    // Saving user to a db
+    const user = await doc.save();
 
     // Exclude passHash
     const { passwordHash, ...userData } = user._doc;
@@ -44,6 +45,7 @@ export const registration = async (req, res) => {
   }
 };
 
+// USER LOGIN
 export const login = async (req, res) => {
   try {
     // Looking for email

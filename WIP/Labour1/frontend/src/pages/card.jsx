@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/UI/loading/loading';
 import Pointer from '../components/UI/pointer/pointer';
-import connection from '../components/connection';
+import server from '../utilites/connection';
 
 function Card({ cardData, loading }) {
   const [innerData, setInnerData] = useState({});
-
   useEffect(() => {
     getInnerData(cardData);
   }, []);
@@ -14,7 +13,7 @@ function Card({ cardData, loading }) {
     try {
       loading(true);
       console.log(cardData._id)
-      const res = await connection.get(`/${cardData._id}`, {params: {id: cardData._id}});
+      const res = await server.get(`/${cardData._id}`, {params: {id: cardData._id}});
       setInnerData(res.data);
       console.log(innerData);
     } catch (e) {

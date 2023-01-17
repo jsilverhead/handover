@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import instance from '../../../utilites/connection';
+import server from '../../../utilites/connection';
 
 const logURI = '/auth/login';
+const regURI = '/auth/registration';
 
 const initialState = {
   user: null,
@@ -12,14 +13,35 @@ const initialState = {
 
 export const LoginAttempt = createAsyncThunk(
   'auth/LoginAttempt',
-  async ({ email, password }, { rejectWithValue, dispatch }) => {
+  async ({ email, password }) => {
     try {
-      const res = await instance.get(logURI, { email, password });
+      const res = await server.get(logURI, { email, password });
       if (res.data.token) {
         window.localStorage.setItem('token', res.data.token);
       }
       return res.data;
-    } catch (e) {}
+    } catch (e) {
+      console.log(`Login failed: ${e}`);
+    }
+  }
+);
+
+export const createUser = createAsyncThunk(
+  'auth/createUser',
+  async ({ userName, email, phone, password }) => {
+    try {
+      const res = await server.post(regURI, {
+        userName,
+        email,
+        phone,
+        password,
+      });
+      if (res.data.token) {
+        window.localStorage.setItem('token', res.data.token);
+      }
+    } catch (e) {
+      console.log(`Registration failed: ${e}`);
+    }
   }
 );
 
@@ -35,17 +57,22 @@ export const authSlice = createSlice({
     },
   },
   extraReducers: {
-    [LoginAttempt.fulfilled]: (state) => {
+    [createUser.fulfilled]: (state, action) => {
       state.isLoading = false;
-      console.log('Logged In');
+      state.status = action.payload.message;
+      state.user = action.payload.email;
+      state.token = action.payload.token;
+      console.log('Successfull registartion');
     },
-    [LoginAttempt.pending]: (state) => {
+    [createUser.pending]: (state) => {
       state.isLoading = true;
-      console.log('Logging in...');
+      state.status = null;
+      console.log('Creating user');
     },
-    [LoginAttempt.rejected]: (state, e) => {
+    [createUser.rejected]: (state, action) => {
       state.isLoading = false;
-      console.log(`Login rejected: ${e}`);
+      state.status = action.payload.message;
+      console.log(`Login rejected`);
     },
   },
 });

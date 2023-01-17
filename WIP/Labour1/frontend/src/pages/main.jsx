@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getHouses } from '../redux/features/houses/houseSlice';
 import Loading from '../components/UI/loading/loading';
 import Pointer from '../components/UI/pointer/pointer';
 
-function MainPage({ housedata, loading, setHouses, cardData }) {
+function MainPage() {
 
-  const [sort, setSort] = useState('All');
-  const [page, setPage] = useState(1);
+  const dispatch = useDispatch();
+  const { houses } = useSelector((state) => state.houses);
 
-  function Sort(sort) {
-    setSort(sort);
-    setHouses([...housedata].sort((a, b) => a[sort].localeCompare(b[sort])));
-  }
+  const isLoading = houses.status === 'loading';
+  const isError = houses.status === 'error';
+
+  //connecting to a server
+  useEffect(() => {
+    dispatch(getHouses());
+  }, []);
+
+  console.log(houses);
 
   return (
     <div className='mainpage'>
@@ -42,7 +49,7 @@ function MainPage({ housedata, loading, setHouses, cardData }) {
         </div>
         <div className='types'>
           <label htmlFor='qartertype'>Quarters Type:</label>
-          <select id='quartertype' onChange={(e) => Sort(e.target.value)}>
+          <select id='quartertype' onChange={(e) => console.log(e.target.value)}>
             <option value='all'>All</option>
             <option value='estate'>Estate</option>
             <option value='hotel'>Hotel Rooms</option>
@@ -50,15 +57,15 @@ function MainPage({ housedata, loading, setHouses, cardData }) {
           </select>
         </div>
       </div>
-      {housedata.lenght = 0 ? <p>Nothing found</p> : loading ? (
+      {isError ? <p>Nothing found</p> : isLoading ? (
         <Loading />
       ) : (
         <div className='cards'>
-          {housedata.map((house) => (
-            <div key={Date.now()} className='housecard'>
-              <Link to={'/' + house._id} onClick={() => cardData({...house})}><img alt={house.title} src={house.picture} className='himg'/></Link>
+          {houses.items.map((house) => (
+            <div key={house.title} className='housecard'>
+              <Link to={'/' + house._id}><img alt={house.title} src={house.picture} className='himg'/></Link>
               <div>
-                <Link to={'/' + house._id} onClick={() => cardData({...house})} className='houselink'><h3>{house.title}</h3></Link>
+                <Link to={'/' + house._id} className='houselink'><h3>{house.title}</h3></Link>
                 <Pointer address={house.address} map={house.googleurl} />
                 <p><span style={{ fontWeight: 'bold' }}>Price:</span> ${house.price}</p>
                 <p><span style={{ fontWeight: 'bold' }}>Size:</span> {house.space} Sqm</p>
