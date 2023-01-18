@@ -5,10 +5,21 @@ const logURI = '/auth/login';
 const regURI = '/auth/registration';
 
 const initialState = {
-  user: null,
-  token: null,
-  isLoading: false,
-  status: null,
+  newUser: {
+    userName: '',
+    email: '',
+    phone: '',
+    password: '',
+    token: null,
+    isLoading: false,
+    status: null,
+  },
+  userLogin: {
+    user: null,
+    token: null,
+    isLoading: false,
+    status: null,
+  },
 };
 
 export const LoginAttempt = createAsyncThunk(
@@ -48,14 +59,7 @@ export const createUser = createAsyncThunk(
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
-  reducers: {
-    login: (state, action) => {
-      state.islogin = action.payload;
-    },
-    registration: (state, action) => {
-      state.userParams = action.payload;
-    },
-  },
+  reducers: {},
   extraReducers: {
     [createUser.fulfilled]: (state, action) => {
       state.isLoading = false;
