@@ -15,8 +15,16 @@
 }
 
 .modalvisible {
-    padding: 40px;
+    padding: 5px;
     background-color: white;
     border-radius: 12px;
     min-width: 250px;
+}
+.closemodal {
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+}
+.closemodal:hover {
+    cursor: pointer;
 }

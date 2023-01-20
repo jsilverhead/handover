@@ -18,8 +18,6 @@ function MainPage() {
     dispatch(getHouses());
   }, []);
 
-  console.log(houses);
-
   return (
     <div className='mainpage'>
       <div className='filters'>
@@ -63,11 +61,11 @@ function MainPage() {
         <div className='cards'>
           {houses.items.map((house) => (
             <div key={house.title} className='housecard'>
-              <Link to={'/' + house._id}><img alt={house.title} src={house.picture} className='himg'/></Link>
+              <Link to={'/' + house._id} id={house._id}><img alt={house.title} src={house.picture} className='himg' /></Link>
               <div>
-                <Link to={'/' + house._id} className='houselink'><h3>{house.title}</h3></Link>
+                <Link to={'/' + house._id} className='houselink' id={house._id}><h3>{house.title}</h3></Link>
                 <Pointer address={house.address} map={house.googleurl} />
-                <p><span style={{ fontWeight: 'bold' }}>Price:</span> ${house.price}</p>
+                <p><span style={{ fontWeight: 'bold' }}>Price:</span> ${house.price} per night</p>
                 <p><span style={{ fontWeight: 'bold' }}>Size:</span> {house.space} Sqm</p>
                 <p>
                   <span style={{ fontWeight: 'bold' }}>About: </span>

@@ -8,6 +8,17 @@ const initialState = {
     items: [],
     status: null,
   },
+  houseInfo: {
+    title: '',
+    price: 0,
+    space: 0,
+    address: '',
+    desc: '',
+    houseType: '',
+    picture: '',
+    googleurl: '',
+    status: null,
+  },
 };
 
 export const getHouses = createAsyncThunk('houses/getHouses', async () => {
@@ -20,7 +31,7 @@ export const houseSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: {
-    [getHouses.pending]: (state, action) => {
+    [getHouses.pending]: (state) => {
       state.houses.items = [];
       state.houses.status = 'loading';
     },
@@ -28,7 +39,7 @@ export const houseSlice = createSlice({
       state.houses.items = action.payload;
       state.houses.status = 'complete';
     },
-    [getHouses.rejected]: (state, action) => {
+    [getHouses.rejected]: (state) => {
       state.houses.items = [];
       state.houses.status = 'error';
     },

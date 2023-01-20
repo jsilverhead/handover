@@ -1,17 +1,17 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createUser } from '../redux/features/auth/authSlice';
 import '../App.css';
 import cl from './registration.module.css';
 
-function Registration({ users, createUsers }) {
+function Registration() {
   const [newUser, setNewUser] = useState({
     userName: '',
     email: '',
     phone: '',
     password: '',
   });
+
   const dispatch = useDispatch();
   const [validationErrors, setValidationErrors] = useState([]);
 
@@ -33,9 +33,10 @@ function Registration({ users, createUsers }) {
   return (
     <div className='container'>
       <form className='registration' onSubmit={(e) => e.preventDefault()}>
-        <div style={{ justifyContent: 'center' }}>
+        <div>
           <h1>Registration</h1>
-        </div>
+          <h3>Welcome to Rent A House</h3>
+          </div>
         <label htmlFor='name'>Your name</label>
         <input
           className='input'

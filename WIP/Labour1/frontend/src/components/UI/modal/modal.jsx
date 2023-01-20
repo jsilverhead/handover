@@ -11,6 +11,7 @@ function Modal({children, visible, setVisible}) {
 
     return <div className={classes.join(' ')} onClick={() => setVisible(false)}>
         <div className={cl.modalvisible} onClick={e => e.stopPropagation()}>
+            <span className={cl.closemodal} onClick={() => setVisible(false)}>&times;</span>
             {children}
         </div>
     </div>
