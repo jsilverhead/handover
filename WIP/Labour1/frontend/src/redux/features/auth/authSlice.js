@@ -15,43 +15,19 @@ const initialState = {
     status: null,
   },
   userLogin: {
-    user: null,
-    token: null,
-    isLoading: false,
+    data: null,
     status: null,
   },
 };
 
 export const LoginAttempt = createAsyncThunk(
   'auth/LoginAttempt',
-  async ({ email, password }) => {
+  async (params) => {
     try {
-      const res = await server.get(logURI, { email, password });
-      if (res.data.token) {
-        window.localStorage.setItem('token', res.data.token);
-      }
+      const res = await server.post(logURI, params);
       return res.data;
     } catch (e) {
       console.log(`Login failed: ${e}`);
-    }
-  }
-);
-
-export const createUser = createAsyncThunk(
-  'auth/createUser',
-  async ({ userName, email, phone, password }) => {
-    try {
-      const res = await server.post(regURI, {
-        userName,
-        email,
-        phone,
-        password,
-      });
-      if (res.data.token) {
-        window.localStorage.setItem('token', res.data.token);
-      }
-    } catch (e) {
-      console.log(`Registration failed: ${e}`);
     }
   }
 );
@@ -61,25 +37,24 @@ export const authSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: {
-    [createUser.fulfilled]: (state, action) => {
-      state.isLoading = false;
-      state.status = action.payload.message;
-      state.user = action.payload.email;
-      state.token = action.payload.token;
-      console.log('Successfull registartion');
+    [LoginAttempt.pending]: (state) => {
+      state.userLogin.status = 'loading';
+      state.userLogin.data = null;
     },
-    [createUser.pending]: (state) => {
-      state.isLoading = true;
-      state.status = null;
-      console.log('Creating user');
+    [LoginAttempt.fulfilled]: (state, action) => {
+      state.userLogin.status = 'complete';
+      state.userLogin.data = action.payload;
     },
-    [createUser.rejected]: (state, action) => {
-      state.isLoading = false;
-      state.status = action.payload.message;
-      console.log(`Login rejected`);
+    [LoginAttempt.rejected]: (state) => {
+      state.userLogin.status = 'error';
+      state.userLogin.data = null;
     },
   },
 });
 
-export const { login, registration } = authSlice.actions;
+// checking if user = authorized
+export function isAuthorized(state) {
+  return Boolean(state.auth.userLogin.data);
+}
+
 export default authSlice.reducer;

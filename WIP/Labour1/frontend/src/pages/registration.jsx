@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { createUser } from '../redux/features/auth/authSlice';
 import '../App.css';
 import cl from './registration.module.css';
 
@@ -16,16 +15,7 @@ function Registration() {
   const [validationErrors, setValidationErrors] = useState([]);
 
   function submit(e) {
-    console.log(newUser)
-    try {
-      dispatch(createUser(newUser));
-      setNewUser({
-        userName: '',
-        email: '',
-        phone: '',
-        password: '',
-      });
-    } catch (e) {}
+
   }
 
   // ДИМА, ДОБАВЬ В СТРЕЛОЧНУЮ ФУНКЦИЮ ФУНКЦИЮ И ТАМ ПРОВЕРЯЙ, А ЕСЛИ ОК ТО ПУШ ЗНАЧЕНИЕ

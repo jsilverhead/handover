@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../redux/features/houses/houseSlice';
@@ -6,7 +6,6 @@ import Loading from '../components/UI/loading/loading';
 import Pointer from '../components/UI/pointer/pointer';
 
 function MainPage() {
-
   const dispatch = useDispatch();
   const { houses } = useSelector((state) => state.houses);
 
@@ -16,7 +15,7 @@ function MainPage() {
   //connecting to a server
   useEffect(() => {
     dispatch(getHouses());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className='mainpage'>

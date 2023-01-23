@@ -270,3 +270,15 @@ margin-right: 5px;
 .additionalLinks:hover {
   color:#483d8b;
 }
+.errorList {
+  list-style: none;
+  margin: 10px 0px;
+  padding: 0px;
+  color: red;
+}
+.errorMsg {
+  color: red;
+}
+.successMsg {
+  color: green;
+}
