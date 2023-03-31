@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import mexp from 'mongoose-elasticsearch-xp';
 
 const QuartersSchema = new mongoose.Schema(
   {
@@ -37,5 +38,7 @@ const QuartersSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+QuartersSchema.plugin(mexp);
 
 export default mongoose.model('Quarters', QuartersSchema);

@@ -36,7 +36,6 @@ export const getInfo = async (req, res) => {
         message: 'Qarters not found or being deleted.',
       });
     }
-
     res.json(card);
   } catch (e) {
     console.log(`Quarters card fetching failed: ${e}`);

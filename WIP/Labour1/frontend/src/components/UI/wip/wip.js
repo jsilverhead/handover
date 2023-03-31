@@ -6,7 +6,7 @@ function Wip() {
   return (
     <div className={cl.wip}>
       <img src={wip} alt='Under Construction' />
-      This area is under construction. Please come again later.
+      Ведутся работы. Этот функционал пока недоступен.
     </div>
   );
 }

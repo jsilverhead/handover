@@ -1,100 +1,145 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import '../App.css';
-import cl from './registration.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+import { RegistrationAttempt } from '../redux/features/auth/authSlice';
+import Loading from '../components/UI/loading/loading';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function Registration() {
-  const [newUser, setNewUser] = useState({
-    userName: '',
-    email: '',
-    phone: '',
-    password: '',
+  const [verified, setVerified] = useState(false);
+  const status = useSelector((state) => state.auth.newUser);
+  const isLoading = status.status === 'loading';
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors, isValid },
+  } = useForm({
+    defaultValues: {
+      userName: '',
+      email: '',
+      phone: '',
+      password: '',
+    },
+    mode: 'onChange',
   });
 
-  const dispatch = useDispatch();
-  const [validationErrors, setValidationErrors] = useState([]);
-
-  function submit(e) {
-
+  async function submitRegister(values) {
+    const res = await dispatch(RegistrationAttempt(values));
+    if (res.payload.status === 200) {
+      setVerified(false);
+      navigate('/success', { replace: true });
+    }
   }
 
-  // ДИМА, ДОБАВЬ В СТРЕЛОЧНУЮ ФУНКЦИЮ ФУНКЦИЮ И ТАМ ПРОВЕРЯЙ, А ЕСЛИ ОК ТО ПУШ ЗНАЧЕНИЕ
+  function onCaptcha(value) {
+    console.log('Captcha value:', value);
+    setVerified(true);
+  }
 
   return (
-    <div className='container'>
-      <form className='registration' onSubmit={(e) => e.preventDefault()}>
-        <div>
-          <h1>Registration</h1>
-          <h3>Welcome to Rent A House</h3>
+    <div className={isLoading ? 'mainspace_loading' : 'mainspace'}>
+      {isLoading ? (
+        <Loading children={'Отправляю данные'} />
+      ) : (
+        <form className='authForm' onSubmit={handleSubmit(submitRegister)}>
+          <div style={{ textAlign: 'center' }}>
+            <h1>Регистрация</h1>
+            <h3>Добро пожаловать на Rent A House</h3>
           </div>
-        <label htmlFor='name'>Your name</label>
-        <input
-          className='input'
-          id='name'
-          value={newUser.userName}
-          type='text'
-          name='name'
-          placeholder='John Doe'
-          onChange={(e) => setNewUser({...newUser, userName: e.target.value })}
-          required
-        />
-        <label htmlFor='email'>Your email</label>
-        <input
-          className='input'
-          id='email'
-          value={newUser.email}
-          type='email'
-          name='email'
-          placeholder='email@email.com'
-          onChange={(e) => setNewUser({...newUser, email: e.target.value })}
-          required
-        />
-        <label htmlFor='phone'>Your phone number</label>
-        <input
-          className='input'
-          id='phone'
-          value={newUser.phone}
-          type='tel'
-          name='phone'
-          placeholder='88005553535'
-          onChange={(e) => setNewUser({...newUser, phone: e.target.value })}
-          required
-        />
-        <label htmlFor='password'>Password</label>
-        <input
-          className='input'
-          id='password'
-          value={newUser.password}
-          type='password'
-          name='phone'
-          placeholder='Password'
-          minLength={8}
-          onChange={(e) => setNewUser({...newUser, password: e.target.value })}
-          required
-        />
-        {/* <label htmlFor='repeatpass'>Repeat Password</label>
-        <input
-          className='input'
-          id='repeatpass'
-          type='password'
-          name='phone'
-          placeholder='Password'
-          minLength={8}
-          required
-        /> */}
-        <div style={{ marginTop: '15px' }}>
-          <button className='filledBtn' onClick={submit} type='submit'>
-            Submit Registration
-          </button>
-        </div>
-        <div id='errors' className={cl.errorlist}>
-          {validationErrors.length !== 0 ? (
-            validationErrors.map((e) => <p key={e + 1}>{e}</p>)
-          ) : (
-            <span></span>
-          )}
-        </div>
-      </form>
+          <label htmlFor='name'>Ваше Имя</label>
+          <input
+            type='text'
+            name='name'
+            placeholder='John Doe'
+            {...register('userName', {
+              required: 'Пожалуйста введите Ваше имя',
+              minLength: {
+                value: 2,
+                message: 'Имя не должно быть менее 2х символов',
+              },
+            })}
+          />
+          <label htmlFor='email'>Ваш email</label>
+          <input
+            type='email'
+            name='email'
+            placeholder='email@email.com'
+            {...register('email', {
+              required: 'Пожалуйста введите email',
+              pattern: {
+                value: /\S+@\S+\.\S+/,
+                message: 'Пожалуйста введите корректный email',
+              },
+            })}
+          />
+          <label htmlFor='phone'>Номер телефона</label>
+          <input
+            type='tel'
+            name='phone'
+            placeholder='88005553535'
+            {...register('phone', {
+              required: 'Пожалуйста, введите номер телефона',
+              pattern: {
+                value:
+                  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+                message: 'Пожалуйста, введите корректный номер телефона',
+              },
+            })}
+          />
+          <label htmlFor='password'>{`Пароль (8 символов)`}</label>
+          <input
+            type='password'
+            name='phone'
+            placeholder='Password'
+            {...register('password', {
+              required: 'Пожалуйста укажите пароль',
+              minLength: {
+                value: 8,
+                message: 'Пароль должен состоять из 8 и более символов',
+              },
+            })}
+          />
+          <label htmlFor='repeatpass'>Повтор пароля</label>
+          <input
+            type='password'
+            name='password_repeat'
+            placeholder='Repeat password'
+            {...register('password_repeat', {
+              required: 'Пожалуйста повторите пароль',
+              minLength: {
+                value: 8,
+                message: 'Пароль должен состоять из 8 и более символов',
+              },
+              validate: (val) => {
+                if (watch('password') !== val) {
+                  return 'Пароли не совпадают';
+                }
+              },
+            })}
+          />
+          <div style={{ marginTop: '15px' }}>
+            <ReCAPTCHA
+              sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+              onChange={onCaptcha}
+            />
+            <br />
+            <button className='filledBtn' type='submit' disabled={!verified}>
+              Зарегистрироваться
+            </button>
+          </div>
+          <ul className='errorList'>
+            <li>{errors.email?.message}</li>
+            <li>{errors.password?.message}</li>
+            <li>{errors.phone?.message}</li>
+            <li>{errors.userName?.message}</li>
+            <li>{errors.password_repeat?.message}</li>
+          </ul>
+        </form>
+      )}
     </div>
   );
 }

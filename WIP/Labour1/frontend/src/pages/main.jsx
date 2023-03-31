@@ -1,78 +1,66 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../redux/features/houses/houseSlice';
+import { isAuthorized } from '../redux/features/auth/authSlice';
 import Loading from '../components/UI/loading/loading';
-import Pointer from '../components/UI/pointer/pointer';
+import Filters from '../components/UI/filters/filters';
+import HouseCard from '../components/UI/housecard/housecard';
 
-function MainPage() {
+function MainPage({ isMobile }) {
   const dispatch = useDispatch();
   const { houses } = useSelector((state) => state.houses);
+  const isAuth = useSelector(isAuthorized);
+  const [pages, setPages] = useState([]);
 
   const isLoading = houses.status === 'loading';
   const isError = houses.status === 'error';
 
   //connecting to a server
   useEffect(() => {
-    dispatch(getHouses());
-  }, [dispatch]);
+    loadFunctions();
+  }, []);
+
+  async function loadFunctions() {
+    try {
+      const res = await dispatch(getHouses());
+      // counting pages
+      for (let i = 0; i < res.payload.length / 6; i++) {
+        pages.push(i + 1);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
-    <div className='mainpage'>
-      <div className='filters'>
-        <div className='fhat'>SEARCH & FILTERS</div>
-        <div className='search'>
-          <input placeholder='Search' className='searchInp'></input>
-        </div>
-        <div className='prices'>
-          <div className='rows'>
-            <label htmlFor='pricemin'>Price starts at:</label>
-            <input id='pricemin' min={0} className='minmax' />
-          </div>
-          <div className='rows'>
-            <label htmlFor='pricemax'>Price ends at:</label>
-            <input id='pricemax' className='minmax' />
-          </div>
-        </div>
-        <div className='spaces'>
-          <div className='rows'>
-            <label htmlFor='spacemin'>Space starts at:</label>
-            <input id='spacemin' min={0} className='minmax' />
-          </div>
-          <div className='rows'>
-            <label htmlFor='spacemax'>Space ends at:</label>
-            <input id='spacemax' className='minmax' />
-          </div>
-        </div>
-        <div className='types'>
-          <label htmlFor='qartertype'>Quarters Type:</label>
-          <select id='quartertype' onChange={(e) => console.log(e.target.value)}>
-            <option value='all'>All</option>
-            <option value='estate'>Estate</option>
-            <option value='hotel'>Hotel Rooms</option>
-            <option value='flat'>Flats</option>
-          </select>
-        </div>
-      </div>
-      {isError ? <p>Nothing found</p> : isLoading ? (
-        <Loading />
+    <div
+      className={
+        isLoading || isError || houses.length === 0
+          ? 'mainspace_loading'
+          : 'mainspace'
+      }
+    >
+      {isError || houses.length === 0 ? (
+        <p>Ничего не найдено, попробуйте другой запрос.</p>
+      ) : isLoading ? (
+        <Loading children={'Подбираем дома'} />
       ) : (
-        <div className='cards'>
-          {houses.items.map((house) => (
-            <div key={house.title} className='housecard'>
-              <Link to={'/' + house._id} id={house._id}><img alt={house.title} src={house.picture} className='himg' /></Link>
-              <div>
-                <Link to={'/' + house._id} className='houselink' id={house._id}><h3>{house.title}</h3></Link>
-                <Pointer address={house.address} map={house.googleurl} />
-                <p><span style={{ fontWeight: 'bold' }}>Price:</span> ${house.price} per night</p>
-                <p><span style={{ fontWeight: 'bold' }}>Size:</span> {house.space} Sqm</p>
-                <p>
-                  <span style={{ fontWeight: 'bold' }}>About: </span>
-                  {house.desc}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className='mainpage'>
+          <Filters
+            maxSpace={houses.maxspace}
+            maxPrice={houses.maxprice}
+            isMobile={isMobile}
+          />
+          <div className='cards'>
+            {isAuth
+              ? houses.items.map((house) => (
+                  <HouseCard house={house} key={house.title} />
+                ))
+              : houses.items.map(
+                  (house, index) =>
+                    index < 6 && <HouseCard house={house} key={house.title} />
+                )}
+          </div>
         </div>
       )}
     </div>

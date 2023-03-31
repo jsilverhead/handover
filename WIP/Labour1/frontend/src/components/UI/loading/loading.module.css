@@ -1,9 +1,22 @@
+.loading_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .loading {
     width: 25px;
     height: 25px;
     border: 5px dotted slategray;
     border-radius: 50%;
     animation: rotate 2s infinite linear;
+}
+
+.blinking_text {
+    font-size: small;
+    animation: blink 2s infinite linear;
+    margin-top: 15px;
 }
 
 @keyframes rotate {
@@ -15,5 +28,17 @@
     }
     100% {
         transform: rotate(720deg) scale(1);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
     }
 }

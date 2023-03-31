@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import mexp from 'mongoose-elasticsearch-xp';
 import cors from 'cors';
 import { createUserValidation, loginValidation } from './validation/auth.js';
 import checkAuth from './utils/checkAuth.js';
@@ -38,6 +39,14 @@ app.post(
 app.post('/auth/login', loginValidation, validationErr, UserOperator.login);
 // LOGGED USER DATA
 app.get('/auth/user', checkAuth, UserOperator.getUser);
+// USER DATA UPDATE
+app.put('/auth/update', validationErr, UserOperator.dataUpdate);
+// USER SEND KEY
+app.post('/auth/gen', UserOperator.sendKey);
+// USER PASSWORD KEYCHECK
+app.post('/auth/checkkey', UserOperator.checkKey);
+// USER PASSWORD UPDATE
+app.post('/auth/newpassword', UserOperator.newPassword);
 
 app.get('/in/', checkAuth, QuartersOperator.authorized);
 app.get('/', QuartersOperator.fetch);

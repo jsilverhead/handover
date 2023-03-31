@@ -1,284 +1,671 @@
-body {
-  background-color: #f5f4f6;
-}
-.header {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  right: 0;
-  box-shadow: 0 3px 4px gray;
-  margin-bottom: 20px;
-}
-.headerInner {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  width: 1024px;
+@media (min-width: 200px) {
+  body {
+    background-color: #f5f4f6;
+    font-size: 1.5em;
+  }
+  form {
+    width: 100%;
+    text-align: center;
+  }
+  .header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 4px gray;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    padding: 0 0;
+  }
+  .headerInner {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+  }
+  .logo img {
+    width: 140px;
+    height: 140px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    overflow-wrap: normal;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    margin: 3% 0;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    max-height: 100px;
+    min-height: 45px;
+    bottom: 0;
+    position: fixed;
+  }
+  footer span {
+    color: #fff;
+    margin-right: 10px;
+  }
+  .accountBtn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 30px;
+  }
+  .accountBtn:hover {
+    cursor: pointer;
+  }
+  .accountBtn img {
+    width: 60px;
+    height: 60px;
+  }
+  .additional {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .additional_logout {
+        margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: 10px;
+        }
+  .mainspace {
+    padding-top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  .mainspace_loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .housecard {
+    background-color: #fff;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 4px;
+    margin: 8px 20px;
+  }
+  .himg {
+    width: 100%;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    margin: auto;
+  }
+  .housecard div {
+    padding: 2%;
+  }
+  .fhat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 4px 4px 0 0;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .houselink {
+    color: black;
+    text-decoration: none;
+  }
+  .mainpage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+  }
+  .filledBtn {
+    color: white;
+    font-weight: bold;
+    background-color: #483d8b;
+    width: 300px;
+    min-width: 20%;
+    padding: 3%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+  }
+
+  .filledBtn:hover {
+    cursor: pointer;
+  }
+
+  .filledBtn:active {
+    transform: translateY(1px);
+  }
+
+  .filledBtn:disabled {
+    color: #f8f8ff;
+    font-weight: bold;
+    background-color: gray;
+    width: 300px;
+    min-width: 20%;
+    padding: 3%;
+    border: none;
+    border-radius: 20px;
+    pointer-events: none;
+  }
+  .hollowBtn {
+    background: #fff;
+    width: fit-content;
+    min-width: 300px;
+    padding: 3%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .hollowBtn:hover {
+    cursor: pointer;
+  }
+  .hollowBtn:active {
+    transform: translateY(2px);
+  }
+  .twobuttons {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 0 0;
+  }
+  .burger {
+    display: flex;
+    justify-content: center;
+  }
+  .burger img {
+    width: 60px;
+    height: 60px;
+  }
+  .burger_display {
+    position: fixed;
+    top: 8.2%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    padding: 25px;
+    animation: show 0.2s linear;
+    font-size: 1.5em;
+    box-shadow: 0px 10px 10px gray;
+    text-align: right;
+  }
+  .burger_hide {
+    position: fixed;
+    top: 8.2%;
+    right: -500px;
+    display: flex;
+    width: 350px;
+    padding: 25px;
+    flex-direction: column;
+    background-color: #fff;
+    animation: hide 0.2s linear;
+    box-shadow: 0px 10px 10px gray;
+    font-size: 1.5em;
+    text-align: right;
+  }
+  .burger_link {
+    text-decoration: none;
+    color: black;
+    padding: 30px 0;
+  }
+  .innercard {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    max-width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+  }
+
+  .innerpic {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  .innerinfo {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+  }
+  @keyframes show {
+    0% {
+      right: -500px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  @keyframes hide {
+    0% {
+      right: 0px;
+    }
+    100% {
+      right: -500px;
+    }
+  }
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+@media (min-width: 1024px) {
+  body {
+    background-color: #f5f4f6;
+    font-size: medium;
+  }
 
-.logo img {
-  width: 50px;
-  height: 50px;
-  margin-left: 8px;
-}
+  h3 {
+    overflow-wrap: normal;
+    width: 180px;
+    font-size: large;
+    margin: 15px 0;
+    text-align: left;
+  }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  footer {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    max-height: 100px;
+    min-height: 45px;
+    bottom: 0;
+    position: fixed;
+  }
 
-.accountBtn {
-  background-color: #fff;
-  border: none;
-  padding: 10px;
-}
+  footer span {
+    color: #fff;
+    margin-right: 10px;
+  }
 
-.accountBtn:hover {
-  cursor: pointer;
-}
+  .header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 4px gray;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    padding: 0 5px;
+  }
 
-.accountBtn img {
-  width: 30px;
-  height: 30px;
-}
+  .headerInner {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.registration {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 8px;
-  padding: 20px 40px;
-}
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
 
-.registration label {
-  margin-top: 10px;
-}
-.registration div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 8px;
+  }
 
-.filledBtn {
-  color: white;
-  font-weight: bold;
-  background-color: #483d8b;
-  width: 150px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-}
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.filledBtn:hover {
-  cursor: pointer;
-}
+  .accountBtn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 30px;
+  }
 
-.hollowBtn {
-  background: #fff;
-  width: 150px;
-  padding: 10px;
-  border: 1px solid lightgray;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-right: 10px;
-}
+  .accountBtn:hover {
+    cursor: pointer;
+  }
 
-.hollowBtn:hover {
-  cursor: pointer;
-}
+  .accountBtn img {
+    width: 25px;
+    height: 25px;
+  }
 
-.registration .input {
-  border: 1px solid slategray;
-  border-radius: 6px;
-  width: 200px;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+  .mainpage {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
 
-.registration .error {
-  border: 1px solid red;
-  border-radius: 6px;
-  width: 200px;
-  padding: 10px;
-}
+  .authForm {
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    min-width: 320px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px 40px;
+  }
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: fit-content;
-}
+  .authForm input {
+    border: 1px solid slategray;
+    border-radius: 6px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-.mainpage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1024px;
-  margin: auto;
-}
+  .authForm label {
+    font-size: small;
+    margin-top: 10px;
+  }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.housecard {
-  background-color: #fff;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 4px;
-  margin: 8px 20px;
-}
-.himg {
-  width: 320px;
-  height: 280px;
-  border: none;
-  border-radius: 4px 4px 0 0;
-}
-.housecard div {
-  padding: 6px;
-}
+  .authForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .filledBtn {
+    color: white;
+    font-weight: bold;
+    background-color: #483d8b;
+    width: fit-content;
+    min-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: small;
+  }
 
-.login input {
-  border: 1px solid slategray;
-  border-radius: 6px;
-  width: 200px;
-  padding: 10px;
-  margin-top: 5px;
-}
-.filters {
-  width: 280px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 4px;
-  margin-top: 8px;
-}
-.fhat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 40px;
-  background-color: #E8E8E8;
-  border: none;
-  border-radius: 4px 4px 0 0;
-}
-.prices, .spaces {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-.rows {
-  display: flex;
-  flex-direction: column;
-}
-.types {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.types select{
-  width: 100px;
-  border: 1px solid slategray;
-  border-radius: 6px;
-  padding: 10px;
-  margin-top: 5px;
-}
-.minmax {
-  border: 1px solid slategray;
-  border-radius: 6px;
-  width: 100px;
-  padding: 10px;
-  margin-top: 5px;
-}
-.searchInp {
-  border: 1px solid slategray;
-  border-radius: 6px;
-  width: 200px;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.houselink {
-  color: black;
-  text-decoration: none;
-}
-.innercard {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  background-color: #fff;
-  border: none;
-  border-radius: 4px;
-  margin: auto;
-}
-.innerpic {
-  width: 600px;
-  height: 480px;
-  margin: auto;
-}
-.innerinfo {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.additional {
-  margin-top: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-.additionalLinks {
-  color: black;
-  text-decoration: none;
-font-size: small;
-margin-top: 10px;
-margin-left: 5px;
-margin-right: 5px;
-}
-.additionalLinks:hover {
-  color:#483d8b;
-}
-.errorList {
-  list-style: none;
-  margin: 10px 0px;
-  padding: 0px;
-  color: red;
-}
-.errorMsg {
-  color: red;
-}
-.successMsg {
-  color: green;
+  .filledBtn:hover {
+    cursor: pointer;
+  }
+
+  .filledBtn:active {
+    transform: translateY(1px);
+  }
+
+  .filledBtn:disabled {
+    color: #f8f8ff;
+    font-weight: bold;
+    background-color: gray;
+    width: fit-content;
+    min-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    pointer-events: none;
+    font-size: small;
+  }
+
+  .hollowBtn {
+    background: #fff;
+    width: fit-content;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .hollowBtn:hover {
+    cursor: pointer;
+  }
+
+  .hollowBtn:active {
+    transform: translateY(2px);
+  }
+
+  .mainspace {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+
+  .mainspace_loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .housecard {
+    background-color: #fff;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 4px;
+    margin: 8px 20px;
+  }
+
+  .himg {
+    width: 320px;
+    height: 240px;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    margin: auto;
+  }
+
+  .housecard div {
+    padding: 6px;
+  }
+  .prices,
+  .spaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .minmax {
+    border: 1px solid slategray;
+    border-radius: 6px;
+    width: 75px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .searchInp {
+    border: 1px solid slategray;
+    border-radius: 6px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .houselink {
+    color: black;
+    text-decoration: none;
+  }
+
+  .innercard {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    max-width: fit-content;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+  }
+
+  .innerpic {
+    max-width: 600px;
+    max-height: 480px;
+    margin: auto;
+  }
+
+  .innerinfo {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium;
+  }
+
+  .additional {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .additionalLinks {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .additionalLinks:hover {
+    color: #483d8b;
+  }
+
+  .errorList {
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0px;
+    color: red;
+  }
+
+  .errorMsg {
+    color: red;
+  }
+
+  .successMsg {
+    color: green;
+  }
+
+  .userIcon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .slider_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+
+  .slider_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider_img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .twobuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 310px;
+    padding: 0 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+  }
+  .burger {
+    display: none;
+    justify-content: center;
+  }
 }
