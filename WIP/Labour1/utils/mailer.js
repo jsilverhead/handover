@@ -1,4 +1,6 @@
 import * as nodemailer from 'nodemailer';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const transporter = nodemailer.createTransport(
   {
@@ -6,12 +8,12 @@ const transporter = nodemailer.createTransport(
     port: 465,
     secure: true,
     auth: {
-      user: 'anelf@bk.ru',
-      pass: 'rqEbYfHfsVvJa9BvB3g6',
+      user: process.env.CLIENT,
+      pass: process.env.PASSWORD,
     },
   },
   {
-    from: 'Rent A House Service <anelf@bk.ru>',
+    from: 'Rent A House Service <rentahouse_noreply@mail.ru>',
   }
 );
 

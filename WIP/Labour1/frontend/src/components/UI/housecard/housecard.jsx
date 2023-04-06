@@ -13,6 +13,7 @@ function HouseCard({ house }) {
           <h3>{house.title}</h3>
         </Link>
         <Pointer address={house.address} map={house.googleurl} />
+        <br />
         <p>
           <span style={{ fontWeight: 'bold' }}>Цена:</span> ${house.price} за
           ночь

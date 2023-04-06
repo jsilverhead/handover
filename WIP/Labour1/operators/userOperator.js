@@ -30,14 +30,14 @@ export const registration = async (req, res) => {
 
     // Answer
     //res.json({ ...userData, token });
-    res.json({ message: 'success' });
+    res.status(200).json({ message: 'success' });
   } catch (error) {
     // Inner answer
-    console.log(`User creation failed: ${error}`);
+    console.log(`Ошибка регистрации: ${error}`);
 
     // Outer answer
     res.status(500).json({
-      message: 'Registration failed',
+      message: 'Ошибка сервера',
     });
   }
 };
@@ -50,7 +50,7 @@ export const login = async (req, res) => {
 
     if (!user) {
       return res.status(400).json({
-        message: `Wrong email or password`,
+        message: `Неправильно указан пользователь или пароль`,
       });
     }
 
@@ -62,7 +62,7 @@ export const login = async (req, res) => {
 
     if (!checkPass) {
       return res.status(400).json({
-        message: `Wrong email or password`,
+        message: `Неправильно указан пользователь или пароль`,
       });
     }
 
@@ -82,7 +82,7 @@ export const login = async (req, res) => {
   } catch (error) {
     console.log(`Login failed: ${error}`);
     res.status(500).json({
-      message: 'An error occured. Please try again later',
+      message: 'Ошибка сервера. Попробуйте позже',
     });
   }
 };
@@ -94,7 +94,7 @@ export const getUser = async (req, res) => {
 
     if (!user) {
       return res.status(404).json({
-        message: 'There is no user with such credentials',
+        message: 'Пользователя с указанными данными не существует',
       });
     }
     // Exclude passHash
@@ -103,9 +103,9 @@ export const getUser = async (req, res) => {
     // Answer
     res.json(userData);
   } catch (error) {
-    console.log(`User data fetching failed: ${error}`);
+    console.log(`Ошибка передачи данных: ${error}`);
     res.status(500).json({
-      message: 'Not authorized',
+      message: 'Не авторизован',
     });
   }
 };
@@ -122,13 +122,13 @@ export const dataUpdate = async (req, res) => {
 
     if (!doc) {
       return res.status(400).json({
-        message: 'There is no user with such credentials',
+        message: 'Пользователя с указанными данными не существует',
       });
     }
-    res.json({ message: 'User Data Update: Success' });
+    res.json({ message: 'Обновление данных пользователя: Success' });
   } catch (error) {
-    console.log(`Updating Data Failed: ${error}`);
-    res.status(500).json({ message: 'Unable to change user data' });
+    console.log(`Ошибка обновления данных пользователя: ${error}`);
+    res.status(500).json({ message: 'Ошибка сервера. Попробуйте позже' });
   }
 };
 
@@ -138,7 +138,7 @@ export const sendKey = async (req, res) => {
     const findUser = await UserModel.findOne({ email: req.body.email });
 
     if (!findUser) {
-      console.log("User doesn't found");
+      console.log('Пользователь не найден');
       return res.status(400).json({ message: 'Пользователь не найден' });
     }
 
@@ -156,7 +156,7 @@ export const sendKey = async (req, res) => {
     const message = {
       to: req.body.email,
       subject: 'Password Reminder',
-      text: `You have received this email because you have requested a password reminder. Your secret key is: ${newKey.key}`,
+      text: `You have received this email because you have requested a password reminder.\n Your secret key is: ${newKey.key}`,
     };
     mailer(message);
     res.status(200).json({

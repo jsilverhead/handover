@@ -61,6 +61,7 @@ function LoginForm({ setVisible }) {
             </div>
             <label htmlFor='userEmail'>Введите Email</label>
             <input
+              className={errors.email ? 'error' : 'input'}
               id='userEmail'
               type='email'
               name='email'
@@ -68,6 +69,7 @@ function LoginForm({ setVisible }) {
             />
             <label htmlFor='userPassword'>Введи пароль</label>
             <input
+              className={errors.password ? 'error' : 'input'}
               id='userPassword'
               type='password'
               name='password'

@@ -1,11 +1,26 @@
-.wip {
+@media (min-width: 200px) {
+  .wip {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
+  }
+  .wip img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
 }
-.wip img {
+@media (min-width: 1024px) {
+  .wip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  .wip img {
     width: 75px;
     height: 75px;
     margin-bottom: 20px;
+  }
 }

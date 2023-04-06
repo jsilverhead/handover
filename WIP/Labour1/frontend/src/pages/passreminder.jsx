@@ -48,9 +48,9 @@ function PassReminder() {
           </div>
           <label htmlFor='email'>Email</label>
           <input
+            className={errors.email ? 'error' : 'input'}
             name='email'
             id='email'
-            className='input'
             type='email'
             placeholder='email@email.com'
             {...register('email', {

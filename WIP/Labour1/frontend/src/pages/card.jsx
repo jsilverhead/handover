@@ -17,6 +17,8 @@ function Card() {
   const [modal, setModal] = useState(false);
   const isAuth = useSelector(isAuthorized);
   const [isLoading, setIsLoading] = useState(true);
+  const [pic, setPic] = useState('');
+  const [isPic, setIsPic] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -34,11 +36,28 @@ function Card() {
     }
   }
 
+  function showPic(e) {
+    setPic(e.target.src);
+    setIsPic(true);
+    setModal(true);
+  }
+
   return (
     <div className={isLoading ? 'mainspace_loading' : 'mainspace'}>
-      <Modal visible={modal} setVisible={setModal}>
-        <Wip />
-      </Modal>
+      {!isPic ? (
+        <Modal visible={modal} setVisible={setModal}>
+          <Wip />
+        </Modal>
+      ) : (
+        <Modal
+          visible={modal}
+          setVisible={setModal}
+          isPic={isPic}
+          setIsPic={setIsPic}
+        >
+          <img src={pic} className='greatPic' />
+        </Modal>
+      )}
       {isLoading ? (
         <Loading children={'Собираем данные'} />
       ) : error ? (
@@ -51,12 +70,14 @@ function Card() {
             <Slider>
               {quarters.additional.map((element) => (
                 <div className='slider_photo'>
-                  <img src={element} className='slider_img' />
+                  <img src={element} className='slider_img' onClick={showPic} />
                 </div>
               ))}
             </Slider>
             <br />
             <Pointer map={quarters.googleurl} address={quarters.address} />
+            <br />
+            <br />
             <p style={{ fontWeight: 'bold' }}>
               Цена:{' '}
               <span style={{ fontWeight: 'normal' }}>
@@ -81,7 +102,7 @@ function Card() {
                 Написать арендодателю
               </button>
             ) : (
-              <span>
+              <span style={{ marginTop: '15px' }}>
                 <Link to='/login'>Авторизируйтесь</Link> что бы написать
                 сообщения арендодателю
               </span>

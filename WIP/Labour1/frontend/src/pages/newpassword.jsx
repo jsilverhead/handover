@@ -47,6 +47,7 @@ function NewPassword() {
           />
           <label htmlFor='key'>Новый пароль</label>
           <input
+            className={errors.password ? 'error' : 'input'}
             id='password'
             name='password'
             type='password'
@@ -61,6 +62,7 @@ function NewPassword() {
           ></input>
           <label>Повторите пароль</label>
           <input
+            className={errors.repeat_password ? 'error' : 'input'}
             type='password'
             id='repeat_password'
             name='repeat_password'

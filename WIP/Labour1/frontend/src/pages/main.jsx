@@ -32,6 +32,8 @@ function MainPage({ isMobile }) {
     }
   }
 
+  console.log(houses);
+
   return (
     <div
       className={

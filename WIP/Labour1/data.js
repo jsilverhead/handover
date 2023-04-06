@@ -1,6 +1,5 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import mexp from 'mongoose-elasticsearch-xp';
 import cors from 'cors';
 import { createUserValidation, loginValidation } from './validation/auth.js';
 import checkAuth from './utils/checkAuth.js';

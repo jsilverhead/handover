@@ -1,32 +1,47 @@
-.pointer {
+@media (min-width: 200px) {
+  .pointer {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .address {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .pointer {
     width: 15px;
     height: 15px;
     margin-right: 5px;
-}
+  }
 
-.pointer:hover {
+  .pointer:hover {
     animation: scale 1s infinite;
-}
+  }
 
-.address{
+  .address {
     text-decoration: none;
     color: black;
     font-size: small;
-}
-.address:hover .pointer {
-    animation: scale 1s infinite;
-}
+  }
 
-@keyframes scale {
+  .address:hover .pointer {
+    animation: scale 1s infinite;
+  }
+
+  @keyframes scale {
     0% {
-        transform: scale(1);
+      transform: scale(1);
     }
 
     50% {
-        transform: scale(1.2);
+      transform: scale(1.2);
     }
 
     100% {
-        transform: scale(1);
+      transform: scale(1);
     }
+  }
 }

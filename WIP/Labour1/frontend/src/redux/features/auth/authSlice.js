@@ -17,14 +17,19 @@ const initialState = {
     password: '',
     token: null,
     status: null,
+    reply: 0,
+    message: null,
   },
   userLogin: {
     data: null,
     status: null,
+    reply: 0,
+    message: null,
   },
   updatePassword: {
-    errors: null,
     queryStatus: null,
+    reply: 0,
+    message: null,
   },
 };
 
@@ -135,9 +140,10 @@ export const authSlice = createSlice({
       state.userLogin.status = 'complete';
       state.userLogin.data = action.payload;
     },
-    [LoginAttempt.rejected]: (state) => {
+    [LoginAttempt.rejected]: (state, action) => {
       state.userLogin.status = 'error';
       state.userLogin.data = null;
+      state.userLogin.message = action.payload.message;
     },
     [checkAuth.pending]: (state) => {
       state.userLogin.status = 'loading';
@@ -147,18 +153,20 @@ export const authSlice = createSlice({
       state.userLogin.status = 'complete';
       state.userLogin.data = action.payload;
     },
-    [checkAuth.rejected]: (state) => {
+    [checkAuth.rejected]: (state, action) => {
       state.userLogin.status = 'error';
       state.userLogin.data = null;
+      state.userLogin.message = action.payload.message;
     },
     [RegistrationAttempt.pending]: (state) => {
       state.userLogin.status = 'loading';
     },
-    [RegistrationAttempt.fulfilled]: (state, action) => {
+    [RegistrationAttempt.fulfilled]: (state) => {
       state.userLogin.status = 'complete';
     },
-    [RegistrationAttempt.rejected]: (state) => {
+    [RegistrationAttempt.rejected]: (state, action) => {
       state.userLogin.status = 'error';
+      state.userLogin.message = action.payload.message;
     },
     [UpdateUser.pending]: (state) => {
       state.userLogin.status = 'loading';
@@ -167,8 +175,9 @@ export const authSlice = createSlice({
       state.userLogin.status = 'complete';
       state.userLogin.data = action.payload;
     },
-    [UpdateUser.rejected]: (state) => {
+    [UpdateUser.rejected]: (state, action) => {
       state.userLogin.status = 'error';
+      state.userLogin.message = action.payload.message;
     },
     [PasswordRequest.pending]: (state) => {
       state.updatePassword.queryStatus = 'loading';
@@ -178,7 +187,7 @@ export const authSlice = createSlice({
     },
     [PasswordRequest.rejected]: (state, action) => {
       state.updatePassword.queryStatus = 'error';
-      state.updatePassword.errors = action.payload;
+      state.updatePassword.message = action.payload.message;
     },
     [KeyCheck.pending]: (state) => {
       state.updatePassword.queryStatus = 'loading';
@@ -188,7 +197,7 @@ export const authSlice = createSlice({
     },
     [KeyCheck.rejected]: (state, action) => {
       state.updatePassword.queryStatus = 'error';
-      state.updatePassword.errors = action.payload;
+      state.updatePassword.message = action.payload.message;
     },
     [fetchNewPassword.pending]: (state) => {
       state.updatePassword.queryStatus = 'loading';
@@ -198,7 +207,7 @@ export const authSlice = createSlice({
     },
     [fetchNewPassword.rejected]: (state, action) => {
       state.updatePassword.queryStatus = 'error';
-      state.updatePassword.errors = action.payload;
+      state.updatePassword.message = action.payload.message;
     },
   },
 });

@@ -51,6 +51,7 @@ function KeyCheckForm() {
           />
           <label htmlFor='key'>Секретный код</label>
           <input
+            className={errors.key ? 'error' : 'input'}
             type='text'
             id='key'
             name='key'

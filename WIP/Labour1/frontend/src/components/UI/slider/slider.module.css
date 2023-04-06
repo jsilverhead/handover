@@ -2,17 +2,15 @@
   .slider_container {
     display: flex;
     align-items: center;
-    height: 120px;
-    width: 415px;
+    height: 170px;
+    width: 96%;
     margin: auto;
   }
-
   .slider_window {
     height: 100%;
     width: 100%;
     overflow: hidden;
   }
-
   .slider_items {
     height: 100%;
     display: flex;
@@ -23,7 +21,6 @@
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
   }
-
   .navigation {
     cursor: pointer;
     height: 20px;
@@ -34,8 +31,8 @@
   .slider_container {
     display: flex;
     align-items: center;
-    height: 120px;
-    width: 415px;
+    height: 130px;
+    width: 540px;
     margin: auto;
   }
 

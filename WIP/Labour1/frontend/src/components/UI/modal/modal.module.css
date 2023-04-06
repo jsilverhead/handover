@@ -1,4 +1,5 @@
-.modal {
+@media (min-width: 200px) {
+  .modal {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -6,26 +7,96 @@
     right: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
-}
+  }
 
-.modal.active {
+  .modal.active {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.modalvisible {
+  .modalvisible {
+    padding: 5px;
+    background-color: white;
+    border-radius: 12px;
+    min-width: 95%;
+    margin-bottom: 500px;
+    font-size: 1.5em;
+  }
+
+  .closemodal {
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
+  .closemodal_pic {
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+    margin-right: 12%;
+    margin-top: 21%;
+  }
+
+  .closemodal:hover {
+    cursor: pointer;
+  }
+  .modalvisible_pic {
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 0;
+    min-width: 95%;
+    margin-bottom: 500px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalvisible {
     padding: 5px;
     background-color: white;
     border-radius: 12px;
     min-width: 250px;
     margin-bottom: 120px;
-}
-.closemodal {
+    font-size: medium;
+  }
+
+  .closemodal {
     font-weight: bold;
     float: right;
     margin-right: 5px;
-}
-.closemodal:hover {
+  }
+  .closemodal_pic {
+    display: none;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+  }
+
+  .closemodal:hover {
     cursor: pointer;
+  }
+  .modalvisible_pic {
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 0;
+    min-width: 95%;
+    margin-bottom: 500px;
+    font-size: 1.5em;
+  }
 }

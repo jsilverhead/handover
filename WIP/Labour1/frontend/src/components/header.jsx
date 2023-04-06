@@ -85,6 +85,20 @@ function Header() {
               Остаться
             </button>
           </div>
+          <div className='exitModal'>
+            <span
+              style={{ marginRight: '50px', fontWeight: 'bold' }}
+              onClick={confirmLogout}
+            >
+              Выход
+            </span>
+            <span
+              style={{ marginLeft: '50px', fontWeight: 'bold' }}
+              onClick={() => setHeaderModal(false)}
+            >
+              Остаться
+            </span>
+          </div>
         </div>
       </Modal>
     </div>

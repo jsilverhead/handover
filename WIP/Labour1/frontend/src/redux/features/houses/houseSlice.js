@@ -44,23 +44,27 @@ export const houseSlice = createSlice({
       console.log(query);
       state.houses.items = state.houses.items.filter((item) => {
         if (query.searchQuery) {
-          console.log('Есть строка');
           return (
-            item.title
+            (item.title
               .toLowerCase()
               .includes(query.searchQuery.toLowerCase()) &&
-            item.price <= query.priceMax &&
-            item.price >= query.priceMin &&
-            item.space <= query.spaceMax &&
-            item.space >= query.spaceMin
+              item.price <= query.priceMax &&
+              item.price >= query.priceMin &&
+              item.space <= query.spaceMax &&
+              item.space >= query.spaceMin &&
+              item.flat === query.flat) ||
+            item.hotel === query.hotel ||
+            item.estate === query.estate
           );
         } else {
-          console.log('Нет строки');
           return (
-            item.price <= query.priceMax &&
-            item.price >= query.priceMin &&
-            item.space <= query.spaceMax &&
-            item.space >= query.spaceMin
+            (item.price <= query.priceMax &&
+              item.price >= query.priceMin &&
+              item.space <= query.spaceMax &&
+              item.space >= query.spaceMin &&
+              item.flat === query.flat) ||
+            item.hotel === query.hotel ||
+            item.estate === query.estate
           );
         }
       });

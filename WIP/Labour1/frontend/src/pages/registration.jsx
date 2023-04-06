@@ -8,6 +8,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 function Registration() {
   const [verified, setVerified] = useState(false);
+  const [serverMessage, setServerMessage] = useState('');
   const status = useSelector((state) => state.auth.newUser);
   const isLoading = status.status === 'loading';
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ function Registration() {
     register,
     handleSubmit,
     watch,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm({
     defaultValues: {
       userName: '',
@@ -29,9 +30,12 @@ function Registration() {
 
   async function submitRegister(values) {
     const res = await dispatch(RegistrationAttempt(values));
-    if (res.payload.status === 200) {
+    if (res.payload.message === 'success') {
       setVerified(false);
       navigate('/success', { replace: true });
+    } else {
+      console.log(`Ошибка ${res.payload.message}`);
+      setServerMessage(res.payload.message);
     }
   }
 
@@ -52,6 +56,7 @@ function Registration() {
           </div>
           <label htmlFor='name'>Ваше Имя</label>
           <input
+            className={errors.name ? 'error' : 'input'}
             type='text'
             name='name'
             placeholder='John Doe'
@@ -65,6 +70,7 @@ function Registration() {
           />
           <label htmlFor='email'>Ваш email</label>
           <input
+            className={errors.email ? 'error' : 'input'}
             type='email'
             name='email'
             placeholder='email@email.com'
@@ -78,6 +84,7 @@ function Registration() {
           />
           <label htmlFor='phone'>Номер телефона</label>
           <input
+            className={errors.phone ? 'error' : 'input'}
             type='tel'
             name='phone'
             placeholder='88005553535'
@@ -92,6 +99,7 @@ function Registration() {
           />
           <label htmlFor='password'>{`Пароль (8 символов)`}</label>
           <input
+            className={errors.password ? 'error' : 'input'}
             type='password'
             name='phone'
             placeholder='Password'
@@ -105,6 +113,7 @@ function Registration() {
           />
           <label htmlFor='repeatpass'>Повтор пароля</label>
           <input
+            className={errors.password_repeat ? 'error' : 'input'}
             type='password'
             name='password_repeat'
             placeholder='Repeat password'
@@ -121,10 +130,15 @@ function Registration() {
               },
             })}
           />
-          <div style={{ marginTop: '15px' }}>
+          <div
+            style={{
+              marginTop: '15px',
+            }}
+          >
             <ReCAPTCHA
               sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
               onChange={onCaptcha}
+              type='image'
             />
             <br />
             <button className='filledBtn' type='submit' disabled={!verified}>
@@ -137,6 +151,7 @@ function Registration() {
             <li>{errors.phone?.message}</li>
             <li>{errors.userName?.message}</li>
             <li>{errors.password_repeat?.message}</li>
+            <li>{serverMessage}</li>
           </ul>
         </form>
       )}

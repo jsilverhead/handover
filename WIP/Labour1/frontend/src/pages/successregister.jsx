@@ -13,10 +13,10 @@ function SuccessRegistration() {
         <Loading children={'Завершаем процесс'} />
       ) : (
         <div className='authForm'>
-          <h1>Success!</h1>
+          <h1>Успех!</h1>
           <h2>Добро пожаловать Rent A House</h2>
-          <h3>Now you can start housing</h3>
-          <Link to='/'>Find quarters</Link>
+          <h3>Теперь вы можете приступить к поиску жилья</h3>
+          <Link to='/'>Найти жильё</Link>
         </div>
       )}
     </div>

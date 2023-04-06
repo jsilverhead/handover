@@ -46,6 +46,7 @@ function ChangeData() {
           <img src={userIcon} className='userIcon' alt='You' />
           <label htmlFor='userName'>Ваше имя</label>
           <input
+            className={errors.name ? 'error' : 'input'}
             name='userName'
             id='userName'
             defaultValue={user.userName}
@@ -59,6 +60,7 @@ function ChangeData() {
           />
           <label htmlFor='email'>Email</label>
           <input
+            className={errors.email ? 'error' : 'input'}
             name='email'
             id='email'
             defaultValue={user.email}
@@ -72,6 +74,7 @@ function ChangeData() {
           />
           <label htmlFor='phone'>Телефон</label>
           <input
+            className={errors.phone ? 'error' : 'input'}
             name='phone'
             id='phone'
             defaultValue={user.phone}
@@ -86,6 +89,7 @@ function ChangeData() {
           />
           <label htmlFor='password'>Пароль</label>
           <input
+            className={errors.password ? 'error' : 'input'}
             type='password'
             name='password'
             id='password'
@@ -99,6 +103,7 @@ function ChangeData() {
           />
           <label htmlFor='repeat_password'>Повторите пароль</label>
           <input
+            className={errors.password_repeat ? 'error' : 'input'}
             type='password'
             name='repeat_password'
             id='repeat_password'
