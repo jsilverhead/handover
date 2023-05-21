@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -19,11 +19,39 @@ function Card() {
   const [isLoading, setIsLoading] = useState(true);
   const [pic, setPic] = useState('');
   const [isPic, setIsPic] = useState(false);
+  const totalPics = useRef(0);
+  const index = useRef(0);
+  const [x1, setX1] = useState(null);
+  const [x2, setX2] = useState(null);
+
+  function handleTouch(e) {
+    const onTouch = e.touches[0];
+    setX1(onTouch.screenX);
+  }
+  function handleMove(e) {
+    if (x1 === null) {
+      console.log(x1);
+      return false;
+    }
+    setX2(e.touches[0].screenX);
+  }
+  function handleStop(e) {
+    let xDiff = x2 - x1;
+    console.log(xDiff);
+
+    if (xDiff > 0) {
+      index.current++;
+      setPic(quarters.additional[index.current]);
+    } else {
+      index.current--;
+      setPic(quarters.additional[index.current]);
+    }
+  }
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 200);
+    }, 300);
     fetchQuarters();
   }, []);
 
@@ -31,15 +59,21 @@ function Card() {
     try {
       const res = await server.get(`/${id}`);
       setQuarters(res.data);
+      totalPics.current = res.data.additional.length;
     } catch (error) {
       setError(`An error occured: ${error}`);
     }
   }
 
   function showPic(e) {
-    setPic(e.target.src);
-    setIsPic(true);
-    setModal(true);
+    index.current = e.target.id;
+    for (let i = 0; i <= quarters.additional.length; i++) {
+      if (i == e.target.id) {
+        setPic(quarters.additional[i]);
+        setIsPic(true);
+        setModal(true);
+      }
+    }
   }
 
   return (
@@ -54,8 +88,18 @@ function Card() {
           setVisible={setModal}
           isPic={isPic}
           setIsPic={setIsPic}
+          pictures={quarters.additional}
+          changePic={setPic}
+          picIndex={index.current}
+          totalPics={totalPics.current}
         >
-          <img src={pic} className='greatPic' />
+          <img
+            src={pic}
+            className='greatPic'
+            onTouchStart={handleTouch}
+            onTouchMove={handleMove}
+            onTouchEnd={handleStop}
+          />
         </Modal>
       )}
       {isLoading ? (
@@ -68,9 +112,14 @@ function Card() {
           <div className='innerinfo'>
             <h3>{quarters.title}</h3>
             <Slider>
-              {quarters.additional.map((element) => (
-                <div className='slider_photo'>
-                  <img src={element} className='slider_img' onClick={showPic} />
+              {quarters.additional.map((element, index) => (
+                <div className='slider_photo' key={element}>
+                  <img
+                    src={element}
+                    className='slider_img'
+                    id={index}
+                    onClick={showPic}
+                  />
                 </div>
               ))}
             </Slider>
@@ -81,7 +130,7 @@ function Card() {
             <p style={{ fontWeight: 'bold' }}>
               Цена:{' '}
               <span style={{ fontWeight: 'normal' }}>
-                ${quarters.price} за ночь
+                ${quarters.price} в месяц
               </span>
             </p>
             <p style={{ fontWeight: 'bold' }}>
@@ -103,7 +152,7 @@ function Card() {
               </button>
             ) : (
               <span style={{ marginTop: '15px' }}>
-                <Link to='/login'>Авторизируйтесь</Link> что бы написать
+                <Link to='/login'>Авторизируйтесь</Link> чтобы написать
                 сообщения арендодателю
               </span>
             )}

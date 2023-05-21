@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -8,6 +8,8 @@ import Loading from '../components/UI/loading/loading';
 function KeyCheckForm() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [isValidated, setIsValidated] = useState(true);
+  const [serverError, setServerError] = useState('');
   const keyData = useSelector((state) => state.auth.updatePassword);
   const { id } = useParams();
   const {
@@ -19,16 +21,17 @@ function KeyCheckForm() {
   const isErr = keyData.errors;
   const isLoading = keyData.queryStatus === 'loading';
 
-  console.log(isErr);
-
   async function submitKeyheck(values) {
     try {
       const res = await dispatch(KeyCheck(values));
       if (res.payload.status === 200) {
         navigate(`/newpassword/${id}`, { replace: true });
       }
+      if (res.payload.code > 200) {
+        setIsValidated(false);
+        setServerError(res.payload.message);
+      }
     } catch (error) {
-      console.log(`KeyCheckFailed: ${error}`);
       console.log(isErr);
     }
   }
@@ -71,6 +74,7 @@ function KeyCheckForm() {
           <ul className='errorList'>
             <li>{errors.key?.message}</li>
             <li>{isErr ? isErr : ''}</li>
+            <li>{isValidated ? '' : serverError}</li>
           </ul>
         </form>
       )}

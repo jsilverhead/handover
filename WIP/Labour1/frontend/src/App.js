@@ -22,7 +22,6 @@ function App() {
     dispatch(checkAuth());
   }, []);
   const isAuth = useSelector(isAuthorized);
-  const [savedData, setSavedData] = useState();
 
   const [modal, setModal] = useState(false); // modal window
 
@@ -47,11 +46,8 @@ function App() {
         <Route path={`/:id`} element={<Card />} />
         <Route path='/success' element={<SuccessRegistration />} />
         <Route path='/login' element={<LoginForm />} />
-        <Route
-          path='/dashboard'
-          element={<Dashboard userData={setSavedData} />}
-        />
-        <Route path='/changedata' element={<ChangeData user={savedData} />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/changedata' element={<ChangeData />} />
         <Route path='/success' element={<SuccessRegistration />} />
         <Route path='/keycheck/:id' element={<KeyCheckForm />} />
         <Route path='/newpassword/:id' element={<NewPassword />} />

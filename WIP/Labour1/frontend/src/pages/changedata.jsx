@@ -21,7 +21,7 @@ function ChangeData() {
     register,
     handleSubmit,
     watch,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm({});
 
   async function submitUpdate(values) {
@@ -49,7 +49,7 @@ function ChangeData() {
             className={errors.name ? 'error' : 'input'}
             name='userName'
             id='userName'
-            defaultValue={user.userName}
+            defaultValue={user.data.userName}
             {...register('userName', {
               required: 'Пожалуйста, введите имя',
               minLength: {
@@ -63,7 +63,7 @@ function ChangeData() {
             className={errors.email ? 'error' : 'input'}
             name='email'
             id='email'
-            defaultValue={user.email}
+            defaultValue={user.data.email}
             {...register('email', {
               required: 'Пожалуйста, введите email',
               pattern: {
@@ -75,15 +75,19 @@ function ChangeData() {
           <label htmlFor='phone'>Телефон</label>
           <input
             className={errors.phone ? 'error' : 'input'}
+            type='tel'
             name='phone'
-            id='phone'
-            defaultValue={user.phone}
+            placeholder='+71112223333'
             {...register('phone', {
-              required: 'Пожалуйста введите телефон',
+              required: 'Пожалуйста, введите номер телефона',
+              minLength: {
+                value: 12,
+                message: 'Номер телефона должен состоять из 11 цифр (+7)',
+              },
               pattern: {
                 value:
-                  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-                message: 'Пожалуйста введите корркетный номер телефона',
+                  /^(\+7)?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+                message: 'Пожалуйста, введите корректный номер телефона (+7)',
               },
             })}
           />
@@ -105,9 +109,8 @@ function ChangeData() {
           <input
             className={errors.password_repeat ? 'error' : 'input'}
             type='password'
-            name='repeat_password'
-            id='repeat_password'
-            {...register('repeat_password', {
+            name='password_repeat'
+            {...register('password_repeat', {
               required: 'Пожалуйста повторите пароль',
               minLength: {
                 value: 8,

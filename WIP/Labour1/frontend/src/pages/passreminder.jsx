@@ -9,8 +9,10 @@ import Loading from '../components/UI/loading/loading';
 
 function PassReminder() {
   const [verified, setVerified] = useState(false);
+  const [isValidated, setIsValidated] = useState(true);
+  const [serverError, setServerError] = useState('');
   const status = useSelector((state) => state.auth.updatePassword);
-  const isLoading = status.queryStatus;
+  const isLoading = status.status === 'loading';
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const {
@@ -30,6 +32,10 @@ function PassReminder() {
         setVerified(false);
         navigate(`/keycheck/${res.payload.data.id}`, { replace: true });
       }
+      if (res.payload.code > 200) {
+        setIsValidated(false);
+        setServerError(res.payload.message);
+      }
     } catch (error) {
       console.log(`Password Request Failed: ${error}`);
     }
@@ -38,7 +44,7 @@ function PassReminder() {
   return (
     <div className={isLoading ? 'mainspace_loading' : 'mainspace'}>
       {isLoading ? (
-        <Loading children={'Загружаем форму'} />
+        <Loading children={'Проверяем данные'} />
       ) : (
         <form className='authForm' onSubmit={handleSubmit(submitPassRequest)}>
           <div style={{ textAlign: 'center' }}>
@@ -59,6 +65,7 @@ function PassReminder() {
                 value: /\S+@\S+\.\S+/,
                 message: 'Пожалуйста введите корректный email',
               },
+              onChange: () => setIsValidated(true),
             })}
           />
           <div style={{ marginTop: '15px' }}>
@@ -67,11 +74,16 @@ function PassReminder() {
               onChange={onCaptcha}
             />
             <br />
-            <button className='filledBtn' type='submit' disabled={!verified}>
+            <button
+              className='filledBtn'
+              type='submit'
+              disabled={!verified || !isValidated}
+            >
               Восстановить пароль
             </button>
             <ul className='errorList'>
               <li>{errors.email?.message}</li>
+              <li>{isValidated ? '' : serverError}</li>
             </ul>
           </div>
           <Link to='/registration' className='additionalLinks'>

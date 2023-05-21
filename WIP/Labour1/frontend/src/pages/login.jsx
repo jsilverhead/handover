@@ -24,17 +24,24 @@ function LoginForm({ setVisible }) {
     mode: 'onChange',
   });
   const [isError, setIsError] = useState(false);
+  const [serverError, setServerError] = useState('');
+  const [isValidated, setIsValidated] = useState(true);
 
   async function submitLogin(values) {
     const res = await dispatch(LoginAttempt(values));
+    console.log(res.payload);
     if (!res.payload) {
       setIsError(true);
       setTimeout(() => {
         setIsError(false);
       }, 1000);
     }
-    if ('token' in res.payload) {
-      window.localStorage.setItem('token', res.payload.token);
+    if (res.payload.code > 200) {
+      setIsValidated(false);
+      setServerError(res.payload.message);
+    }
+    if ('token' in res.payload.data) {
+      window.localStorage.setItem('token', res.payload.data.token);
     }
   }
 
@@ -44,8 +51,8 @@ function LoginForm({ setVisible }) {
 
   if (isError) {
     return (
-      <div style={{ padding: '30px' }}>
-        <p>Ошибка доступа. Повторите запрос позже.</p>
+      <div className='mainspace'>
+        <p>Ошибка сервера. Повторите запрос позже.</p>
       </div>
     );
   } else
@@ -65,7 +72,10 @@ function LoginForm({ setVisible }) {
               id='userEmail'
               type='email'
               name='email'
-              {...register('email', { required: 'Please fill in the email' })}
+              {...register('email', {
+                required: 'Please fill in the email',
+                onChange: () => setIsValidated(true),
+              })}
             />
             <label htmlFor='userPassword'>Введи пароль</label>
             <input
@@ -75,16 +85,26 @@ function LoginForm({ setVisible }) {
               name='password'
               {...register('password', {
                 required: 'Please fill in the password',
+                minLength: {
+                  value: 8,
+                  message: 'Пароль должен содержать не менее 8 символов',
+                },
+                onChange: () => setIsValidated(true),
               })}
             />
             <div style={{ marginTop: '20px' }}>
-              <button type='submit' className='filledBtn'>
+              <button
+                type='submit'
+                className='filledBtn'
+                disabled={isValidated === false}
+              >
                 Войти
               </button>
             </div>
             <ul className='errorList'>
               <li>{errors.email?.message}</li>
               <li>{errors.password?.message}</li>
+              <li>{isValidated ? '' : serverError}</li>
             </ul>
             <div className='additional'>
               <Link

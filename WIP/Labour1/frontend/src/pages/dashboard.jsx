@@ -6,10 +6,10 @@ import userIcon from '../components/UI/user.png';
 import Loading from '../components/UI/loading/loading';
 import { useState } from 'react';
 
-function Dashboard({ userData }) {
+function Dashboard() {
   const isAuth = useSelector(isAuthorized);
-  const user = useSelector((state) => state.auth.userLogin.data);
   const [isLoading, setIsLoading] = useState(true);
+  const user = useSelector((state) => state.auth.userLogin.data);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -24,11 +24,11 @@ function Dashboard({ userData }) {
           <h1>Личный кабинет</h1>
           <h3>Добро пожаловать</h3>
           <img src={userIcon} className='userIcon' alt='You' />
-          <p>Имя: {user.userName}</p>
-          <p>Email: {user.email}</p>
-          <p>Телефон: {user.phone}</p>
+          <p>Имя: {user.data.userName}</p>
+          <p>Email: {user.data.email}</p>
+          <p>Телефон: {user.data.phone}</p>
           <br />
-          <Link to='/changedata' onClick={() => userData(user)}>
+          <Link to='/changedata'>
             <button className='hollowBtn'>Изменить данные</button>
           </Link>
         </div>

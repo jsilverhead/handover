@@ -46,6 +46,8 @@ app.post('/auth/gen', UserOperator.sendKey);
 app.post('/auth/checkkey', UserOperator.checkKey);
 // USER PASSWORD UPDATE
 app.post('/auth/newpassword', UserOperator.newPassword);
+app.post('/auth/checkemail', UserOperator.checkMail);
+app.post('/auth/checkphone', UserOperator.checkNumber);
 
 app.get('/in/', checkAuth, QuartersOperator.authorized);
 app.get('/', QuartersOperator.fetch);

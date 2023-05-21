@@ -72,10 +72,9 @@
     background-color: white;
     border-radius: 12px;
     min-width: 250px;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
     font-size: medium;
   }
-
   .closemodal {
     font-weight: bold;
     float: right;
@@ -87,16 +86,14 @@
     float: right;
     margin-right: 5px;
   }
-
   .closemodal:hover {
     cursor: pointer;
   }
   .modalvisible_pic {
     padding: 5px;
+    min-width: 600px;
     background-color: transparent;
     border-radius: 0;
-    min-width: 95%;
     margin-bottom: 500px;
-    font-size: 1.5em;
   }
 }

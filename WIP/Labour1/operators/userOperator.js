@@ -3,41 +3,65 @@ import KeyModel from '../models/key.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import mailer from '../utils/mailer.js';
-import user from '../models/user.js';
 import KeyGen from 'generate-key';
 
 // USER REGISTRATION
 export const registration = async (req, res) => {
   try {
-    // Hashing password
-    const unhashed = req.body.password;
-    const salt = await bcrypt.genSalt(10);
-    const hashed = await bcrypt.hash(unhashed, salt);
+    // Searching for duplicates
+    const searchEmail = await UserModel.findOne({ email: req.body.email });
 
-    // Creating document
-    const doc = new UserModel({
-      userName: req.body.userName,
-      email: req.body.email,
-      phone: req.body.phone,
-      passwordHash: hashed,
-    });
+    if (searchEmail) {
+      console.log('Пользователь с таким email уже существует');
+      res.status(403).json({
+        code: 403,
+        message: 'Пользователь с таким email уже зарегистрирован',
+      });
+    } else {
+      const searchPhone = await UserModel.findOne({ phone: req.body.phone });
 
-    // Saving user to a db
-    const user = await doc.save();
+      if (searchPhone) {
+        console.log('Пользователь с таким номером уже существует');
+        res.status(403).json({
+          code: 403,
+          message: 'Пользователь с таким номером уже зарегистрирован',
+        });
+      } else {
+        // Hashing password
+        const unhashed = req.body.password;
+        const salt = await bcrypt.genSalt(10);
+        const hashed = await bcrypt.hash(unhashed, salt);
 
-    // Exclude passHash
-    const { passwordHash, ...userData } = user._doc;
+        // Creating document
+        const doc = new UserModel({
+          userName: req.body.userName,
+          email: req.body.email,
+          phone: req.body.phone,
+          passwordHash: hashed,
+        });
 
-    // Answer
-    //res.json({ ...userData, token });
-    res.status(200).json({ message: 'success' });
+        // Saving user to a db
+        const user = await doc.save();
+
+        // Exclude passHash
+        const { passwordHash, ...userData } = user._doc;
+
+        // Answer
+        //res.json({ ...userData, token });
+        return res.status(200).json({
+          code: 200,
+          message: 'Регистрация успешно завершена',
+        });
+      }
+    }
   } catch (error) {
     // Inner answer
     console.log(`Ошибка регистрации: ${error}`);
 
     // Outer answer
-    res.status(500).json({
-      message: 'Ошибка сервера',
+    return res.status(500).json({
+      code: 500,
+      message: `Ошибка сервера: ${error}`,
     });
   }
 };
@@ -49,7 +73,8 @@ export const login = async (req, res) => {
     const user = await UserModel.findOne({ email: req.body.email });
 
     if (!user) {
-      return res.status(400).json({
+      return res.status(403).json({
+        code: 403,
         message: `Неправильно указан пользователь или пароль`,
       });
     }
@@ -61,7 +86,8 @@ export const login = async (req, res) => {
     );
 
     if (!checkPass) {
-      return res.status(400).json({
+      return res.status(403).json({
+        code: 403,
         message: `Неправильно указан пользователь или пароль`,
       });
     }
@@ -82,6 +108,7 @@ export const login = async (req, res) => {
   } catch (error) {
     console.log(`Login failed: ${error}`);
     res.status(500).json({
+      code: 500,
       message: 'Ошибка сервера. Попробуйте позже',
     });
   }
@@ -93,7 +120,8 @@ export const getUser = async (req, res) => {
     const user = await UserModel.findById(req.userID);
 
     if (!user) {
-      return res.status(404).json({
+      return res.status(403).json({
+        code: 403,
         message: 'Пользователя с указанными данными не существует',
       });
     }
@@ -105,6 +133,7 @@ export const getUser = async (req, res) => {
   } catch (error) {
     console.log(`Ошибка передачи данных: ${error}`);
     res.status(500).json({
+      code: 400,
       message: 'Не авторизован',
     });
   }
@@ -122,13 +151,17 @@ export const dataUpdate = async (req, res) => {
 
     if (!doc) {
       return res.status(400).json({
+        code: 400,
         message: 'Пользователя с указанными данными не существует',
       });
     }
     res.json({ message: 'Обновление данных пользователя: Success' });
   } catch (error) {
     console.log(`Ошибка обновления данных пользователя: ${error}`);
-    res.status(500).json({ message: 'Ошибка сервера. Попробуйте позже' });
+    res.status(500).json({
+      code: 500,
+      message: 'Ошибка сервера. Попробуйте позже',
+    });
   }
 };
 
@@ -139,7 +172,10 @@ export const sendKey = async (req, res) => {
 
     if (!findUser) {
       console.log('Пользователь не найден');
-      return res.status(400).json({ message: 'Пользователь не найден' });
+      return res.status(403).json({
+        code: 403,
+        message: 'Пользователь не найден',
+      });
     }
 
     const key = await KeyModel.findOne({ userId: findUser._id });
@@ -160,14 +196,16 @@ export const sendKey = async (req, res) => {
     };
     mailer(message);
     res.status(200).json({
+      code: 200,
       message: `Email Successfuly sent to ${req.body.email}`,
       id: findUser._id,
     });
   } catch (error) {
     console.log(`Email sending failed: ${error}`);
-    return res
-      .status(500)
-      .json({ message: `Unable to send an email: ${error}` });
+    return res.status(500).json({
+      code: 500,
+      message: `Unable to send an email: ${error}`,
+    });
   }
 };
 
@@ -178,18 +216,30 @@ export const checkKey = async (req, res) => {
 
     if (!findUser) {
       console.log("User doesn't found");
-      return res.status(400).json({ message: 'Пользователь не найден' });
+      return res.status(403).json({
+        code: 403,
+        message: 'Пользователь не найден',
+      });
     }
     const matchKey = await KeyModel.findOne({ key: req.body.key });
     if (!matchKey) {
       console.log('Keys do not match');
-      return res.status(400).json({ message: 'Неправильный ключ' });
+      return res.status(403).json({
+        code: 403,
+        message: 'Неправильный секретный код',
+      });
     }
     console.log('Секретный ключ успешно принят');
-    return res.status(200).json({ message: 'Секретный ключ успешно принят' });
+    return res.status(200).json({
+      code: 200,
+      message: 'Секретный ключ успешно принят',
+    });
   } catch (error) {
     console.log(`Something wrong: ${error}`);
-    return res.status(500).json({ message: `Что-то пошло не так: ${error}` });
+    return res.status(500).json({
+      code: 500,
+      message: `Что-то пошло не так: ${error}`,
+    });
   }
 };
 
@@ -208,14 +258,62 @@ export const newPassword = async (req, res) => {
 
     if (!findUser) {
       console.log(`Пользователь ID: ${req.body.id} не найден`);
-      return res.status(400).json({ message: 'Ошибка доступа' });
+      return res.status(400).json({
+        code: 400,
+        message: 'Ошибка доступа',
+      });
     }
     console.log('Пароль успешно обновлен');
-    return res.status(200).json({ message: 'Пароль успешно обновлен' });
+    return res.status(200).json({
+      code: 200,
+      message: 'Пароль успешно обновлен',
+    });
   } catch (error) {
     console.log(`Something wrong: ${error}`);
-    return res
-      .status(500)
-      .json({ message: `Не удалось обновить пароль: ${error}` });
+    return res.status(500).json({
+      code: 500,
+      message: `Не удалось обновить пароль: ${error}`,
+    });
+  }
+};
+
+// CHECK EMAIL FOR DUPLICATES
+export const checkMail = async (req, res) => {
+  try {
+    const check = await UserModel.findOne({ email: req.body.email });
+
+    if (check) {
+      res.json({
+        code: 403,
+        message: 'Пользователь с данным email уже существует',
+      });
+    } else {
+      res.json({ code: 200, message: 'Пользователь с данным email не найден' });
+    }
+  } catch (error) {
+    console.log(`Ошибка: ${error}`);
+    res.status(500);
+  }
+};
+
+// CHECK PHONE FOR DUPLICATES
+export const checkNumber = async (req, res) => {
+  try {
+    console.log(req.body.phone);
+    const check = await UserModel.findOne({ phone: req.body.phone });
+    if (check) {
+      res.json({
+        code: 403,
+        message: 'Пользователь с данным номером телефона уже существует',
+      });
+    } else {
+      res.json({
+        code: 200,
+        message: 'Пользователь с данным номером телефона не найден',
+      });
+    }
+  } catch (error) {
+    console.log(`Ошибка: ${error}`);
+    res.status(500);
   }
 };

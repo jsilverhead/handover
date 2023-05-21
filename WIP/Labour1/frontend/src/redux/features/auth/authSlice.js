@@ -11,76 +11,80 @@ const newPassURI = '/auth/newpassword';
 
 const initialState = {
   newUser: {
-    userName: '',
-    email: '',
-    phone: '',
-    password: '',
-    token: null,
     status: null,
-    reply: 0,
-    message: null,
+    error: null,
   },
   userLogin: {
     data: null,
     status: null,
-    reply: 0,
-    message: null,
+    error: null,
   },
   updatePassword: {
-    queryStatus: null,
-    reply: 0,
-    message: null,
+    status: null,
+    error: null,
   },
 };
 
 export const LoginAttempt = createAsyncThunk(
   'auth/LoginAttempt',
-  async (params) => {
+  async (params, { rejectWithValue }) => {
     try {
       const res = await server.post(logURI, params);
-      return res.data;
+      const response = {
+        status: res.status,
+        data: res.data,
+      };
+      return response;
     } catch (error) {
-      console.log(`Login failed: ${error}`);
+      return rejectWithValue(error.response.data);
     }
   }
 );
 
 export const checkAuth = createAsyncThunk('auth/checkAuth', async () => {
-  try {
-    const res = await server.get(checkToken);
-    return res.data;
-  } catch (error) {
-    console.log(error);
-  }
+  const res = await server.get(checkToken);
+  const response = {
+    status: res.status,
+    data: res.data,
+  };
+  return response;
 });
 
 export const RegistrationAttempt = createAsyncThunk(
   'auth/RegistrationAttempt',
-  async (params) => {
+  async (params, { rejectWithValue }) => {
     try {
       const res = await server.post(regURI, params);
-      return res.data;
+      const response = {
+        status: res.status,
+        data: res.data,
+      };
+      return response;
     } catch (error) {
-      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
 
 export const UpdateUser = createAsyncThunk(
   'auth/UpdateUser',
-  async (params) => {
+  async (params, { rejectWithValue }) => {
     try {
       const res = await server.put(updateURI, params);
-      return res.data;
+      const response = {
+        status: res.status,
+        data: res.data,
+      };
+      return response;
     } catch (error) {
-      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
 
 export const PasswordRequest = createAsyncThunk(
   'auth/PassworRequest',
-  async (params) => {
+  async (params, { rejectWithValue }) => {
     try {
       const res = await server.post(passURI, params);
       const response = {
@@ -89,27 +93,30 @@ export const PasswordRequest = createAsyncThunk(
       };
       return response;
     } catch (error) {
-      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
 
-export const KeyCheck = createAsyncThunk('auth/KeyCheck', async (params) => {
-  try {
-    const res = await server.post(keyURI, params);
-    const response = {
-      status: res.status,
-      data: res.data,
-    };
-    return response;
-  } catch (error) {
-    console.log(error);
+export const KeyCheck = createAsyncThunk(
+  'auth/KeyCheck',
+  async (params, { rejectWithValue }) => {
+    try {
+      const res = await server.post(keyURI, params);
+      const response = {
+        status: res.status,
+        data: res.data,
+      };
+      return response;
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
   }
-});
+);
 
 export const fetchNewPassword = createAsyncThunk(
   'auth/fetchNewPassword',
-  async (params) => {
+  async (params, { rejectWithValue }) => {
     try {
       const res = await server.post(newPassURI, params);
       const response = {
@@ -118,7 +125,7 @@ export const fetchNewPassword = createAsyncThunk(
       };
       return response;
     } catch (error) {
-      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
@@ -143,7 +150,7 @@ export const authSlice = createSlice({
     [LoginAttempt.rejected]: (state, action) => {
       state.userLogin.status = 'error';
       state.userLogin.data = null;
-      state.userLogin.message = action.payload.message;
+      state.userLogin.error = action.payload;
     },
     [checkAuth.pending]: (state) => {
       state.userLogin.status = 'loading';
@@ -156,17 +163,17 @@ export const authSlice = createSlice({
     [checkAuth.rejected]: (state, action) => {
       state.userLogin.status = 'error';
       state.userLogin.data = null;
-      state.userLogin.message = action.payload.message;
+      state.userLogin.reply = action.payload;
     },
     [RegistrationAttempt.pending]: (state) => {
-      state.userLogin.status = 'loading';
+      state.newUser.status = 'loading';
     },
     [RegistrationAttempt.fulfilled]: (state) => {
-      state.userLogin.status = 'complete';
+      state.newUser.status = 'complete';
     },
     [RegistrationAttempt.rejected]: (state, action) => {
-      state.userLogin.status = 'error';
-      state.userLogin.message = action.payload.message;
+      state.newUser.status = 'error';
+      state.newUser.error = action.payload;
     },
     [UpdateUser.pending]: (state) => {
       state.userLogin.status = 'loading';
@@ -177,37 +184,37 @@ export const authSlice = createSlice({
     },
     [UpdateUser.rejected]: (state, action) => {
       state.userLogin.status = 'error';
-      state.userLogin.message = action.payload.message;
+      state.userLogin.error = action.payload;
     },
     [PasswordRequest.pending]: (state) => {
-      state.updatePassword.queryStatus = 'loading';
+      state.updatePassword.status = 'loading';
     },
     [PasswordRequest.fulfilled]: (state) => {
-      state.updatePassword.queryStatus = 'complete';
+      state.updatePassword.status = 'complete';
     },
     [PasswordRequest.rejected]: (state, action) => {
-      state.updatePassword.queryStatus = 'error';
-      state.updatePassword.message = action.payload.message;
+      state.updatePassword.status = 'error';
+      state.updatePassword.error = action.payload;
     },
     [KeyCheck.pending]: (state) => {
-      state.updatePassword.queryStatus = 'loading';
+      state.updatePassword.status = 'loading';
     },
     [KeyCheck.fulfilled]: (state) => {
-      state.updatePassword.queryStatus = 'complete';
+      state.updatePassword.status = 'complete';
     },
     [KeyCheck.rejected]: (state, action) => {
-      state.updatePassword.queryStatus = 'error';
-      state.updatePassword.message = action.payload.message;
+      state.updatePassword.status = 'error';
+      state.updatePassword.reply = action.payload;
     },
     [fetchNewPassword.pending]: (state) => {
-      state.updatePassword.queryStatus = 'loading';
+      state.updatePassword.status = 'loading';
     },
     [fetchNewPassword.fulfilled]: (state) => {
-      state.updatePassword.queryStatus = 'complete';
+      state.updatePassword.status = 'complete';
     },
     [fetchNewPassword.rejected]: (state, action) => {
-      state.updatePassword.queryStatus = 'error';
-      state.updatePassword.message = action.payload.message;
+      state.updatePassword.status = 'error';
+      state.updatePassword.reply = action.payload;
     },
   },
 });

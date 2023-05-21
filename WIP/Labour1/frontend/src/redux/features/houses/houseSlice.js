@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import server from '../../../utilites/connection';
 
 const URI = '/';
-const filterURI = '/filter';
 
 const initialState = {
   houses: {
@@ -43,28 +42,39 @@ export const houseSlice = createSlice({
       const query = action.payload;
       console.log(query);
       state.houses.items = state.houses.items.filter((item) => {
-        if (query.searchQuery) {
+        if (!item.flat && !item.hotel && !item.estate) {
+          console.log('ничего');
+          return null;
+        } else if (query.searchQuery) {
           return (
-            (item.title
+            item.title
               .toLowerCase()
               .includes(query.searchQuery.toLowerCase()) &&
-              item.price <= query.priceMax &&
-              item.price >= query.priceMin &&
-              item.space <= query.spaceMax &&
-              item.space >= query.spaceMin &&
-              item.flat === query.flat) ||
-            item.hotel === query.hotel ||
-            item.estate === query.estate
+            item.price <= query.priceMax &&
+            item.price >= query.priceMin &&
+            item.space <= query.spaceMax &&
+            item.space >= query.spaceMin &&
+            (item.flat
+              ? item.flat === query.flat
+              : null || item.hotel
+              ? item.hotel === query.hotel
+              : null || item.estate
+              ? item.estate === query.estate
+              : null)
           );
         } else {
           return (
-            (item.price <= query.priceMax &&
-              item.price >= query.priceMin &&
-              item.space <= query.spaceMax &&
-              item.space >= query.spaceMin &&
-              item.flat === query.flat) ||
-            item.hotel === query.hotel ||
-            item.estate === query.estate
+            item.price <= query.priceMax &&
+            item.price >= query.priceMin &&
+            item.space <= query.spaceMax &&
+            item.space >= query.spaceMin &&
+            (item.flat
+              ? item.flat === query.flat
+              : null || item.hotel
+              ? item.hotel === query.hotel
+              : null || item.estate
+              ? item.estate === query.estate
+              : null)
           );
         }
       });

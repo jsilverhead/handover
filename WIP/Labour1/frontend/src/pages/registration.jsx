@@ -5,10 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { RegistrationAttempt } from '../redux/features/auth/authSlice';
 import Loading from '../components/UI/loading/loading';
 import ReCAPTCHA from 'react-google-recaptcha';
+import server from '../utilites/connection';
 
 function Registration() {
   const [verified, setVerified] = useState(false);
-  const [serverMessage, setServerMessage] = useState('');
+  const [isDuplicateEmail, setIsDuplicateEmail] = useState(false);
+  const [isDuplicatePhone, setIsDuplicatePhone] = useState(false);
+  const [serverMessage1, setServerMessage1] = useState('');
+  const [serverMessage2, setServerMessage2] = useState('');
   const status = useSelector((state) => state.auth.newUser);
   const isLoading = status.status === 'loading';
   const dispatch = useDispatch();
@@ -29,19 +33,46 @@ function Registration() {
   });
 
   async function submitRegister(values) {
-    const res = await dispatch(RegistrationAttempt(values));
-    if (res.payload.message === 'success') {
-      setVerified(false);
-      navigate('/success', { replace: true });
+    if (isDuplicateEmail === true || !isDuplicatePhone === true) {
+      const res = await dispatch(RegistrationAttempt(values));
+      console.log(res);
+      if (res.payload.data.code === 200) {
+        setVerified(false);
+        navigate('/success', { replace: true });
+      } else {
+        return;
+      }
     } else {
-      console.log(`Ошибка ${res.payload.message}`);
-      setServerMessage(res.payload.message);
+      return;
     }
   }
 
-  function onCaptcha(value) {
-    console.log('Captcha value:', value);
+  function onCaptcha() {
     setVerified(true);
+  }
+
+  async function duplicateEmail(e) {
+    console.log('checking', e.target.value);
+    const res = await server.post('auth/checkemail', { email: e.target.value });
+    if (res.data.code === 403 || res.data.code === 500) {
+      setIsDuplicateEmail(true);
+      setServerMessage1(res.data.message);
+    } else {
+      setIsDuplicateEmail(false);
+      setServerMessage1('');
+    }
+  }
+  async function duplicatePhone(e) {
+    const res = await server.post('auth/checkphone', { phone: e.target.value });
+    if (res.data.code === 403 || res.data.code === 500) {
+      setIsDuplicatePhone(true);
+      console.log(isDuplicatePhone);
+      setServerMessage2(res.data.message);
+    } else {
+      setIsDuplicatePhone(false);
+      console.log(isDuplicatePhone);
+      setServerMessage2('');
+    }
   }
 
   return (
@@ -80,6 +111,9 @@ function Registration() {
                 value: /\S+@\S+\.\S+/,
                 message: 'Пожалуйста введите корректный email',
               },
+              onChange: (e) => {
+                duplicateEmail(e);
+              },
             })}
           />
           <label htmlFor='phone'>Номер телефона</label>
@@ -87,13 +121,20 @@ function Registration() {
             className={errors.phone ? 'error' : 'input'}
             type='tel'
             name='phone'
-            placeholder='88005553535'
+            placeholder='+71112223333'
             {...register('phone', {
               required: 'Пожалуйста, введите номер телефона',
+              minLength: {
+                value: 12,
+                message: 'Номер телефона должен состоять из 11 цифр (+7)',
+              },
               pattern: {
                 value:
-                  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-                message: 'Пожалуйста, введите корректный номер телефона',
+                  /^(\+7)?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
+                message: 'Пожалуйста, введите корректный номер телефона (+7)',
+              },
+              onChange: (e) => {
+                duplicatePhone(e);
               },
             })}
           />
@@ -151,7 +192,8 @@ function Registration() {
             <li>{errors.phone?.message}</li>
             <li>{errors.userName?.message}</li>
             <li>{errors.password_repeat?.message}</li>
-            <li>{serverMessage}</li>
+            <li>{serverMessage1}</li>
+            <li>{serverMessage2}</li>
           </ul>
         </form>
       )}

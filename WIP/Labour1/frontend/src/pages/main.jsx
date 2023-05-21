@@ -5,12 +5,14 @@ import { isAuthorized } from '../redux/features/auth/authSlice';
 import Loading from '../components/UI/loading/loading';
 import Filters from '../components/UI/filters/filters';
 import HouseCard from '../components/UI/housecard/housecard';
+import Pagination from '../components/UI/pagination/pagination';
 
 function MainPage({ isMobile }) {
   const dispatch = useDispatch();
   const { houses } = useSelector((state) => state.houses);
   const isAuth = useSelector(isAuthorized);
-  const [pages, setPages] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(6);
 
   const isLoading = houses.status === 'loading';
   const isError = houses.status === 'error';
@@ -18,32 +20,31 @@ function MainPage({ isMobile }) {
   //connecting to a server
   useEffect(() => {
     loadFunctions();
+    console.log(houses);
   }, []);
 
   async function loadFunctions() {
     try {
       const res = await dispatch(getHouses());
-      // counting pages
-      for (let i = 0; i < res.payload.length / 6; i++) {
-        pages.push(i + 1);
-      }
     } catch (error) {
       console.log(error);
     }
   }
 
-  console.log(houses);
+  const lastHouseIndex = currentPage * itemsPerPage;
+  const firstHouseIndex = lastHouseIndex - itemsPerPage;
+  const houseList = houses.items.slice(firstHouseIndex, lastHouseIndex);
 
   return (
     <div
       className={
-        isLoading || isError || houses.length === 0
+        isLoading || isError || houses.items === null
           ? 'mainspace_loading'
           : 'mainspace'
       }
     >
       {isError || houses.length === 0 ? (
-        <p>Ничего не найдено, попробуйте другой запрос.</p>
+        <p>Отсутствует соединение с сервером. Попробуйте позже.</p>
       ) : isLoading ? (
         <Loading children={'Подбираем дома'} />
       ) : (
@@ -55,15 +56,24 @@ function MainPage({ isMobile }) {
           />
           <div className='cards'>
             {isAuth
-              ? houses.items.map((house) => (
+              ? houseList.map((house) => (
                   <HouseCard house={house} key={house.title} />
                 ))
-              : houses.items.map(
+              : houseList.map(
                   (house, index) =>
                     index < 6 && <HouseCard house={house} key={house.title} />
                 )}
           </div>
         </div>
+      )}
+      {isAuth ? (
+        <Pagination
+          totalItems={houses.items.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      ) : (
+        ''
       )}
     </div>
   );

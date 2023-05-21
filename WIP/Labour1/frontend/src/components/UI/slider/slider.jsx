@@ -8,7 +8,6 @@ function Slider({ children }) {
   const [offset, setOffset] = useState(0);
   const [x1, setX1] = useState(null);
   const [x2, setX2] = useState(null);
-  const [xPos, setXPos] = useState(null);
 
   const slideWidth = 125;
 

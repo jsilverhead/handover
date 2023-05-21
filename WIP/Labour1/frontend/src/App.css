@@ -31,8 +31,8 @@
     margin-left: 2%;
   }
   .logo img {
-    width: 140px;
-    height: 140px;
+    width: 30%;
+    height: 30%;
   }
   .menu {
     display: flex;
@@ -43,7 +43,6 @@
     overflow-wrap: normal;
     text-align: center;
     font-size: 1.5em !important;
-    width: 100%;
     font-size: 2em;
     margin: 3% 0;
   }
@@ -300,6 +299,9 @@
     height: 100%;
     width: 100%;
   }
+  .slider_img:hover {
+    cursor: pointer;
+  }
   .authForm {
     margin-top: 10px;
     background-color: #fff;
@@ -368,14 +370,14 @@
     margin-top: 300px;
     z-index: 99999999;
   }
-        .additionalLinks {
-          color: black;
-          text-decoration: none;
-          font-size: 1.4em;
-          margin-top: 10px;
-          margin-left: 5px;
-          margin-right: 5px;
-        }
+  .additionalLinks {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   @keyframes show {
     0% {
       right: -500px;
@@ -402,7 +404,6 @@
 
   h3 {
     overflow-wrap: normal;
-    width: 180px;
     font-size: large;
     margin: 15px 0;
     text-align: left;
@@ -485,7 +486,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     margin: auto;
   }
 
@@ -591,7 +592,7 @@
   .mainspace {
     padding-top: 60px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: auto;
@@ -611,6 +612,7 @@
   .cards {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     flex-wrap: wrap;
   }
 
@@ -785,5 +787,11 @@
     margin: auto;
     z-index: 99999999;
     margin-top: 300px;
+  }
+  .burger_display {
+    display: none;
+  }
+  .burger_hide {
+    display: none;
   }
 }

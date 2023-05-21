@@ -79,10 +79,12 @@ function Filters({ maxPrice, maxSpace, isMobile }) {
                 От:
               </label>
               <input
+                type='number'
                 id='pricemin'
                 min={0}
                 className={cl.minmax}
                 defaultValue={0}
+                inputMode='numeric'
                 {...register(
                   'priceMin',
                   {
@@ -98,9 +100,11 @@ function Filters({ maxPrice, maxSpace, isMobile }) {
                 До:
               </label>
               <input
+                type='number'
                 id='pricemax'
                 className={cl.minmax}
                 defaultValue={maxPrice ? maxPrice : 0}
+                inputMode='numeric'
                 {...register(
                   'priceMax',
                   { required: 'Поле не может быть пустым' },
@@ -119,9 +123,11 @@ function Filters({ maxPrice, maxSpace, isMobile }) {
                 От:
               </label>
               <input
+                type='number'
                 id='spacemin'
                 className={cl.minmax}
                 defaultValue={0}
+                inputMode='numeric'
                 {...register(
                   'spaceMin',
                   { required: 'Поля не может быть пустым' },
@@ -135,9 +141,11 @@ function Filters({ maxPrice, maxSpace, isMobile }) {
                 До:
               </label>
               <input
+                type='number'
                 id='spacemax'
                 className={cl.minmax}
                 defaultValue={maxSpace ? maxSpace : 0}
+                inputMode='numeric'
                 {...register(
                   'spaceMax',
                   { required: 'Поле не может быть пустым' },

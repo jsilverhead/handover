@@ -253,6 +253,7 @@
     display: flex;
     align-items: center;
     overflow: auto;
+    animation: none;
   }
   .fhat {
     display: flex;
