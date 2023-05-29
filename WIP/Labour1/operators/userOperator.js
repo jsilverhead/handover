@@ -155,7 +155,14 @@ export const dataUpdate = async (req, res) => {
         message: 'Пользователя с указанными данными не существует',
       });
     }
-    res.json({ message: 'Обновление данных пользователя: Success' });
+    const token = jwt.sign(
+      {
+        _id: user._id,
+      },
+      'key',
+      { expiresIn: '14d' }
+    );
+    res.json({ token, message: 'Обновление данных пользователя: Success' });
   } catch (error) {
     console.log(`Ошибка обновления данных пользователя: ${error}`);
     res.status(500).json({
@@ -299,7 +306,6 @@ export const checkMail = async (req, res) => {
 // CHECK PHONE FOR DUPLICATES
 export const checkNumber = async (req, res) => {
   try {
-    console.log(req.body.phone);
     const check = await UserModel.findOne({ phone: req.body.phone });
     if (check) {
       res.json({
@@ -315,5 +321,17 @@ export const checkNumber = async (req, res) => {
   } catch (error) {
     console.log(`Ошибка: ${error}`);
     res.status(500);
+  }
+};
+
+// GET ACCOUNT INFO
+export const getInfo = async (req, res) => {
+  try {
+    const findUser = await UserModel.findOne({ email: req.body.email });
+
+    res.json({ findUser, code: 200, message: 'Пользователь найден' });
+  } catch (error) {
+    console.log(`Возникла ошибка: ${error}`);
+    res.json({ code: 500, message: 'Ошибка сервера' });
   }
 };

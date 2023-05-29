@@ -16,7 +16,7 @@ function SuccessRegistration() {
           <h1>Успех!</h1>
           <h2>Добро пожаловать Rent A House</h2>
           <h3>Теперь вы можете приступить к поиску жилья</h3>
-          <Link to='/'>Найти жильё</Link>
+          <Link to='/login'>Найти жильё</Link>
         </div>
       )}
     </div>

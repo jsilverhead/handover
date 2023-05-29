@@ -77,6 +77,7 @@ function ChangeData() {
             className={errors.phone ? 'error' : 'input'}
             type='tel'
             name='phone'
+            defaultValue={user.data.phone}
             placeholder='+71112223333'
             {...register('phone', {
               required: 'Пожалуйста, введите номер телефона',

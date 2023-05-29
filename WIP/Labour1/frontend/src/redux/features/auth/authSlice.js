@@ -8,6 +8,7 @@ const updateURI = '/auth/update';
 const passURI = '/auth/gen';
 const keyURI = '/auth/checkkey';
 const newPassURI = '/auth/newpassword';
+const userDataURI = '/auth/getuserdata';
 
 const initialState = {
   newUser: {
@@ -22,6 +23,10 @@ const initialState = {
   updatePassword: {
     status: null,
     error: null,
+  },
+  userInfo: {
+    status: null,
+    data: null,
   },
 };
 
@@ -130,6 +135,14 @@ export const fetchNewPassword = createAsyncThunk(
   }
 );
 
+export const getUserInfo = createAsyncThunk('auth/getUserInfo', async () => {
+  try {
+    const res = await server.get(userDataURI);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
@@ -179,6 +192,7 @@ export const authSlice = createSlice({
       state.userLogin.status = 'loading';
     },
     [UpdateUser.fulfilled]: (state, action) => {
+      state.userLogin.data = null;
       state.userLogin.status = 'complete';
       state.userLogin.data = action.payload;
     },
@@ -215,6 +229,16 @@ export const authSlice = createSlice({
     [fetchNewPassword.rejected]: (state, action) => {
       state.updatePassword.status = 'error';
       state.updatePassword.reply = action.payload;
+    },
+    [getUserInfo.pending]: (state) => {
+      state.userInfo.status = ' loading';
+    },
+    [getUserInfo.pending]: (state, action) => {
+      state.userInfo.status = 'complete';
+      state.userInfo.data = action.payload;
+    },
+    [getUserInfo.rejected]: (state) => {
+      state.userInfo.status = 'error';
     },
   },
 });
