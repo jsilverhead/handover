@@ -135,13 +135,21 @@ export const fetchNewPassword = createAsyncThunk(
   }
 );
 
-export const getUserInfo = createAsyncThunk('auth/getUserInfo', async () => {
-  try {
-    const res = await server.get(userDataURI);
-  } catch (error) {
-    console.log(error);
+export const getUserInfo = createAsyncThunk(
+  'auth/getUserInfo',
+  async (params) => {
+    try {
+      const res = await server.get(userDataURI, params);
+      const response = {
+        status: res.status,
+        data: res.data,
+      };
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
   }
-});
+);
 
 export const authSlice = createSlice({
   name: 'auth',
@@ -233,7 +241,7 @@ export const authSlice = createSlice({
     [getUserInfo.pending]: (state) => {
       state.userInfo.status = ' loading';
     },
-    [getUserInfo.pending]: (state, action) => {
+    [getUserInfo.fulfilled]: (state, action) => {
       state.userInfo.status = 'complete';
       state.userInfo.data = action.payload;
     },

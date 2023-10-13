@@ -329,7 +329,7 @@ export const getInfo = async (req, res) => {
   try {
     const findUser = await UserModel.findOne({ email: req.body.email });
 
-    res.json({ findUser, code: 200, message: 'Пользователь найден' });
+    res.json({ user: findUser, code: 200, message: 'Пользователь найден' });
   } catch (error) {
     console.log(`Возникла ошибка: ${error}`);
     res.json({ code: 500, message: 'Ошибка сервера' });
