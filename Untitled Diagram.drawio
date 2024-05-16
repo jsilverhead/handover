@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T13:30:19.811Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="pXfln2jGh6gIA--6uYpz" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T14:10:10.888Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="4REbMV6dt62hCG1GqClr" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel dx="3771" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4609" dy="1640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-196" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="3320" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-194" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5620" y="3320" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-192" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5620" y="3090" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-190" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="3090" width="180" height="180" as="geometry" />
+        </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-2" value="&lt;strong style=&quot;font-size: 28px;&quot;&gt;Аутентификация / Регистрация&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
           <mxGeometry x="30" y="140" width="450" height="30" as="geometry" />
         </mxCell>
@@ -451,10 +463,150 @@
           <mxGeometry x="5960" y="920" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-160" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание&lt;/span&gt; &lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5690" y="1040" width="450" height="30" as="geometry" />
+          <mxGeometry x="5680" y="1040" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-161" value="&lt;p&gt;Может быть создан &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;При создании &lt;strong&gt;Questionnaire&lt;/strong&gt; указываются следующие характеристики:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Целевая аудитория&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип опроса. (&lt;em&gt;Сбор общественного мнения/тестирование&lt;/em&gt;)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Анонимное прохождение&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Сразу после сохранения имеет статус черновика. Всего меет 3 статуса:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Черновик&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Опубликован&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;В архиве&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="5680" y="1080" width="490" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-162" value="Question" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="1360" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-163" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание &lt;/span&gt;&lt;strong&gt;Question&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="1420" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-164" value="&lt;p&gt;При создании указывается &lt;strong&gt;Questionnaire&lt;/strong&gt; к которому добавляется &lt;strong&gt;Question&lt;/strong&gt; и тип &lt;strong&gt;Question, &lt;/strong&gt;а также данные, набор которых зависит от типа &lt;strong&gt;Question.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Общими параметрами для всех &lt;strong&gt;Question&lt;/strong&gt; является:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Текст вопроса;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Флаг &quot;обязательный&quot;. Без &lt;strong&gt;UserAnswer,&lt;/strong&gt; на данный &lt;strong&gt;Question,&lt;/strong&gt; &lt;strong&gt;User &lt;/strong&gt;не может отправить &lt;strong&gt;Questionnaire&lt;/strong&gt; (т.е. успешно закончить прохождение);&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип &lt;strong&gt;Question&lt;/strong&gt;;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Изображение;&lt;strong&gt; &lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt; может быть нескольких типов.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Развернутый.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Один из списка.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Несколько из списка.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Интерактивный (на карте).&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;&lt;strong&gt;AnswerRoute&lt;/strong&gt;&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;&lt;strong&gt;AnswerMark&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Рейтинговая шкала.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;В зависимости от типа &lt;strong&gt;Questionnaire &lt;/strong&gt;опрос или тестирование, &lt;strong&gt;&lt;em&gt;Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;обязан иметь как минимум один правильный&lt;/em&gt;&lt;strong&gt;&lt;em&gt; QuestionAnswer (для тестирования).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="1470" width="490" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-165" target="3WN8UBnGJbhX-x8cYGGZ-168">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-165" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="2020" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-166" target="3WN8UBnGJbhX-x8cYGGZ-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-166" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5800" y="2020" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-168" target="3WN8UBnGJbhX-x8cYGGZ-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-168" value="Тип и данные&lt;div&gt;&lt;b&gt;Question&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5760" y="1930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-169" value="QuestionCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="1990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-173" value="&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;*&lt;/strong&gt; –&lt;em&gt; Доступен только для &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; с типом &quot;сбор общественного мнения&quot;.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; Развернутый &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Текстовое поле для &lt;strong&gt;UserAnswer&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; Интерактивный &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question. &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;В качестве &lt;strong&gt;UserAnswer&lt;/strong&gt; - может выступать &lt;strong&gt;&lt;em&gt;AnswerMark&lt;/em&gt; &lt;/strong&gt;или&lt;strong&gt; AnswerRoute. Admin &lt;/strong&gt;- выбирает &lt;strong&gt;область&lt;/strong&gt; на карте которая доступна для взаимодействия &lt;strong&gt;User-у. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt; Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;c рейтинговой шкалой. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;В качестве &lt;strong&gt;UserAnswer&lt;/strong&gt; -  значение рейтинга. При создании указываются минимальное/максимальное значение шкалы.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Один из списка &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Выбор из переданных &lt;strong&gt;QuestionAnswer. User &lt;/strong&gt;может выбрать только один &lt;strong&gt;QuestionAnswer &lt;/strong&gt;в качестве&lt;strong&gt; UserAnswer&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;В случае &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;тестирования&lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt; обязательно нужно пометить один &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;QuestionAnswer&lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt; как правильный.&lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Несколько из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt; Question.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Выбор из переданных &lt;strong&gt;QuestionAnswer. User &lt;/strong&gt;может выбрать несколько &lt;strong&gt;QuestionAnswer &lt;/strong&gt;в качестве&lt;strong&gt; UserAnswer. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;В случае тестирования обязательно нужно пометить как минимум один &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;QuestionAnswer &lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;как правильный&lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;.&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="2150" width="490" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-174" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Прохождение &lt;/span&gt;&lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;User&lt;/strong&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;-ом&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="2700" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-175" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может пройти &lt;strong&gt;Questionnaire&lt;/strong&gt;, если он подходит под целевую аудиторию &lt;strong&gt;Questionnaire. &lt;/strong&gt;В процессе прохождения &lt;strong&gt;Questionnaire&lt;/strong&gt; система сохраняет &lt;strong&gt;UserAnswer&lt;/strong&gt; на каждый &lt;strong&gt;Question. UserAnswer - &lt;/strong&gt;доступен для просмотра в статистике даже после того как &lt;strong&gt;Question&lt;/strong&gt; был удален&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Варианты &lt;strong&gt;UserAnswer&lt;/strong&gt; зависят от типа &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Для каждого типа &lt;strong&gt;QuestionAnswer&lt;/strong&gt; существует свой тип &lt;strong&gt;UserAnswer&lt;/strong&gt;.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="2760" width="490" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-176" target="3WN8UBnGJbhX-x8cYGGZ-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-176" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="2920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-177" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;Данные об ответе на &lt;b style=&quot;font-size: 11px;&quot;&gt;Question&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="5760" y="2930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-178" target="3WN8UBnGJbhX-x8cYGGZ-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-178" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6010" y="2920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-185" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-179" target="3WN8UBnGJbhX-x8cYGGZ-184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-179" value="UserAnswerCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5840" y="3070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.469;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-177" target="3WN8UBnGJbhX-x8cYGGZ-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-192">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-194">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=-0.333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-199">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5900" y="3499.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-184" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5860" y="3270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-186" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5670" y="3170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-187" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6050" y="3170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-188" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6050" y="3400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-189" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5670" y="3400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-191" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Рейтинговая шкала&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="3100" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-193" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Развернутый&amp;nbsp;&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5620" y="3100" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-195" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;тип&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Интерактивный&amp;nbsp;&lt;/em&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5620" y="3330" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-197" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Один из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="3330" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-198" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5810" y="3510" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-199" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Несколько из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5810" y="3520" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-200" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5860" y="3590" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-209" value="&lt;p&gt;На основе пройденных &lt;strong&gt;Questionnaire&lt;/strong&gt; собирается статистика по каждому &lt;strong&gt;Questionnaire&lt;/strong&gt;. Статистика доступна для просмотра &lt;strong&gt;Admin QuestionnaireManagment Permissions.&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="3720" width="450" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-210" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Статистика по пройденным&lt;/span&gt; &lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;User-&lt;/strong&gt;ами" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6210" y="2700" width="620" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-211" value="&lt;p&gt;&lt;strong&gt;Admin&lt;/strong&gt; может просматривать статистику по пройденным &lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6210" y="2760" width="490" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-212" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Удаление\Редактирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Question&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="1420" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-213" value="&lt;p&gt;Есть возможность редактирования/удаления &lt;strong&gt;Question &lt;/strong&gt;до момента пока&lt;strong&gt; Questionnaire &lt;/strong&gt;находится в статусе черновика.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="1480" width="490" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-214" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Редактирование &lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="1040" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-215" value="&lt;p&gt;Может быть отредактирован &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Редактированию подлежат только &lt;strong&gt;Questionnaire&lt;/strong&gt; в статусе &quot;черновик&quot;. При редактировании доступно добавление/удаление/редактирование &lt;strong&gt;Question&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Подробнее в разделе создание и редактирование &lt;strong&gt;Question.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="1100" width="490" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-216" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Удаление&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1040" width="450" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
