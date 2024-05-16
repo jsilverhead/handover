@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T14:37:15.179Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="CN2-Vgezx-UAfQmvzKE_" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T14:46:39.130Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="OS_BCXg9QMhPvyLbq3Hz" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel dx="20740" dy="7380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="8296" dy="2952" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-196" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="3320" width="180" height="180" as="geometry" />
+          <mxGeometry x="3000" y="3310" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-194" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5620" y="3320" width="180" height="180" as="geometry" />
+          <mxGeometry x="2620" y="3310" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-192" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5620" y="3090" width="180" height="180" as="geometry" />
+          <mxGeometry x="2620" y="3080" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-190" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="3090" width="180" height="180" as="geometry" />
+          <mxGeometry x="3000" y="3080" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-2" value="&lt;strong style=&quot;font-size: 28px;&quot;&gt;Аутентификация / Регистрация&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
           <mxGeometry x="30" y="140" width="450" height="30" as="geometry" />
@@ -100,328 +100,328 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-31" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;Admin&lt;/span&gt;&lt;span style=&quot;font-size: 25px; font-weight: normal;&quot;&gt; Аутентификация / Регистрация&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="680" y="535" width="450" height="30" as="geometry" />
+          <mxGeometry x="20" y="995" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-32" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="510" width="80" height="80" as="geometry" />
+          <mxGeometry x="480" y="970" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-33" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Admin &lt;/strong&gt;авторизуется в системе&lt;strong&gt; (логин/пароль)&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="680" y="610" width="490" height="80" as="geometry" />
+          <mxGeometry x="20" y="1070" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-34" target="3WN8UBnGJbhX-x8cYGGZ-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-34" value="Auth Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="680" width="120" height="40" as="geometry" />
+          <mxGeometry x="20" y="1140" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-35" value="AuthAdmin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="680" width="120" height="40" as="geometry" />
+          <mxGeometry x="220" y="1140" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-37" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Admin &lt;/strong&gt;не может быть зарегистрирован в системе. Создание &lt;strong&gt;Admin-а &amp;nbsp;&lt;/strong&gt;осуществляется только &lt;strong&gt;SuperAdmin&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="680" y="730" width="490" height="80" as="geometry" />
+          <mxGeometry x="20" y="1190" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-38" target="3WN8UBnGJbhX-x8cYGGZ-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="680" y="820" width="80" height="80" as="geometry" />
+          <mxGeometry x="20" y="1280" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-39" target="3WN8UBnGJbhX-x8cYGGZ-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-39" value="AdminCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="800" y="840" width="120" height="40" as="geometry" />
+          <mxGeometry x="140" y="1300" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-40" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="960" y="820" width="80" height="80" as="geometry" />
+          <mxGeometry x="300" y="1280" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-43" value="Ролевая модель" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="140" width="450" height="30" as="geometry" />
+          <mxGeometry x="720" y="150" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-44" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1680" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="970" y="125" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-45" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1780" y="125" width="80" height="60" as="geometry" />
+          <mxGeometry x="1070" y="135" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-46" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1870" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="1160" y="125" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-47" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1770" y="135" width="80" height="60" as="geometry" />
+          <mxGeometry x="1060" y="145" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-48" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Базовая &lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="255" width="450" height="30" as="geometry" />
+          <mxGeometry x="720" y="265" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-49" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="235" width="80" height="80" as="geometry" />
+          <mxGeometry x="890" y="245" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-50" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Role&lt;/strong&gt; &lt;strong&gt;SuperAdmin&lt;/strong&gt; прописана константой - имеет все доступы. Создается только командой - может существовать только один  &lt;strong&gt;Admin&lt;/strong&gt; - с ролью &lt;strong&gt;SuperAdmin&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="330" width="490" height="80" as="geometry" />
+          <mxGeometry x="730" y="340" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-51" target="3WN8UBnGJbhX-x8cYGGZ-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-51" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="430" width="80" height="80" as="geometry" />
+          <mxGeometry x="730" y="440" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-52" target="3WN8UBnGJbhX-x8cYGGZ-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-52" value="GetPermissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1570" y="440" width="150" height="60" as="geometry" />
+          <mxGeometry x="860" y="450" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-56" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1775" y="430" width="80" height="60" as="geometry" />
+          <mxGeometry x="1065" y="440" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-57" value="Permissions&lt;div&gt;(&lt;b&gt;all&lt;/b&gt;)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1765" y="440" width="80" height="60" as="geometry" />
+          <mxGeometry x="1055" y="450" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-59" value="Permissions" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="565" width="450" height="30" as="geometry" />
+          <mxGeometry x="720" y="575" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-60" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Permissions&lt;/strong&gt; набор предопределенных прав доступа. Не может быть создан, редактироваться и удаляться &lt;strong&gt;Admin-om&lt;/strong&gt;. Набор &lt;strong&gt;Permissions &lt;/strong&gt;задается только разработчиками.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1430" y="640" width="490" height="80" as="geometry" />
+          <mxGeometry x="720" y="650" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-61" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="545" width="80" height="60" as="geometry" />
+          <mxGeometry x="890" y="555" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-62" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1590" y="555" width="80" height="60" as="geometry" />
+          <mxGeometry x="880" y="565" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-63" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Permissions:&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;UserManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;MarkManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;QuestionnaireManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;StatisticManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;NewsManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;EventManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;RepairManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;FeedbackManagement&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="780" width="490" height="80" as="geometry" />
+          <mxGeometry x="710" y="790" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-65" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="255" width="450" height="30" as="geometry" />
+          <mxGeometry x="720" y="995" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-66" value="&lt;p&gt;При создании &lt;strong&gt;Role&lt;/strong&gt; пользователя указываются все &lt;strong&gt;Permissions&lt;/strong&gt; которые может выполнять &lt;strong&gt;Admin&lt;/strong&gt; данной &lt;strong&gt;Role&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может создавать &lt;strong&gt;Role.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="315" width="490" height="80" as="geometry" />
+          <mxGeometry x="720" y="1055" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-67" target="3WN8UBnGJbhX-x8cYGGZ-69">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-67" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2050" y="435" width="80" height="60" as="geometry" />
+          <mxGeometry x="730" y="1175" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-68" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="445" width="80" height="60" as="geometry" />
+          <mxGeometry x="720" y="1185" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-69" target="3WN8UBnGJbhX-x8cYGGZ-73">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-69" value="RoleCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2190" y="435" width="150" height="60" as="geometry" />
+          <mxGeometry x="870" y="1175" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-73" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2390" y="425" width="80" height="80" as="geometry" />
+          <mxGeometry x="1070" y="1165" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-75" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Назначение &lt;/span&gt;&lt;strong&gt;Role &lt;/strong&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;для&lt;/span&gt;&lt;strong&gt; Admin&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="570" width="450" height="30" as="geometry" />
+          <mxGeometry x="720" y="1310" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-76" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2390" y="545" width="80" height="80" as="geometry" />
+          <mxGeometry x="1070" y="1285" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-77" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2480" y="545" width="80" height="80" as="geometry" />
+          <mxGeometry x="1160" y="1285" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-78" value="&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может назначать роли другим &lt;strong&gt;Admin.&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="640" width="490" height="80" as="geometry" />
+          <mxGeometry x="720" y="1380" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-79" target="3WN8UBnGJbhX-x8cYGGZ-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-79" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="720" width="80" height="80" as="geometry" />
+          <mxGeometry x="720" y="1460" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-80" target="3WN8UBnGJbhX-x8cYGGZ-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-80" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="840" width="80" height="80" as="geometry" />
+          <mxGeometry x="720" y="1580" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-81" value="AdminRoleSetter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2190" y="790" width="130" height="60" as="geometry" />
+          <mxGeometry x="870" y="1530" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-84" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Редактирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="2640" y="255" width="450" height="30" as="geometry" />
+          <mxGeometry x="690" y="1710" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-85" value="&lt;p&gt;При редактировании &lt;strong&gt;Role&lt;/strong&gt; обновляются все&lt;strong&gt; Permissions&lt;/strong&gt; для данной &lt;strong&gt;Role&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может редактировать &lt;strong&gt;Role.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="2640" y="315" width="490" height="80" as="geometry" />
+          <mxGeometry x="690" y="1770" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-86" target="3WN8UBnGJbhX-x8cYGGZ-91">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-86" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2640" y="430" width="80" height="80" as="geometry" />
+          <mxGeometry x="690" y="1885" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-87" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2650" y="570" width="80" height="60" as="geometry" />
+          <mxGeometry x="700" y="2025" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-88" target="3WN8UBnGJbhX-x8cYGGZ-91">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-88" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2640" y="580" width="80" height="60" as="geometry" />
+          <mxGeometry x="690" y="2035" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-91" target="3WN8UBnGJbhX-x8cYGGZ-92">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-91" value="RolePermissionsUpdater" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2800" y="510" width="150" height="60" as="geometry" />
+          <mxGeometry x="850" y="1965" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-92" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="2990" y="500" width="80" height="80" as="geometry" />
+          <mxGeometry x="1040" y="1955" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-96" value="User" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="3270" y="140" width="450" height="30" as="geometry" />
+          <mxGeometry x="1380" y="155" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-97" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Добавление&lt;/span&gt;&lt;strong&gt; User-a&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="3270" y="255" width="450" height="30" as="geometry" />
+          <mxGeometry x="1380" y="270" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-98" value="&lt;p&gt;User добавляется автоматически в момент регистрации.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="3270" y="315" width="490" height="80" as="geometry" />
+          <mxGeometry x="1380" y="330" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-99" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может указать &lt;em&gt;область приватности - &lt;/em&gt;область на карте которая будет видна только &lt;strong&gt;User-у &lt;/strong&gt;который создает &lt;em&gt;область приватности&lt;/em&gt;&lt;strong&gt;&lt;em&gt; &lt;/em&gt;&lt;/strong&gt;и не видна другим &lt;strong&gt;User-ам&lt;/strong&gt;. &lt;em&gt;Область приватности - &lt;/em&gt;состоит из&lt;em&gt; &lt;/em&gt;окружности разных стандартных радиусов, которые смещаются единожды при создании относительно выбранного пользователем центра, во избежание определения  точки, которую пользователь предпочёл скрыть. Точки трека внутри данной окружности не отображаются при просмотре &lt;strong&gt;Path&lt;/strong&gt; другими &lt;strong&gt;User.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Редактирование личных данные &lt;strong&gt;User&lt;/strong&gt;-a&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;User-name&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;ФИО&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Место рождения&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Дата рождения&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Пол (мужской или женский)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Район города (выбор из списка), возможен выбор нескольких районов.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Тепловая карта интенсивности личных поездок&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Отображать цветом каждый &lt;strong&gt;Path&lt;/strong&gt; &lt;strong&gt;User-a.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Отображение  тепловой карты должно индицировать наиболее популярные &lt;strong&gt;Path,&lt;/strong&gt; по количеству проездов по определенном участку. &lt;strong&gt;User&lt;/strong&gt; может выбирать данные какого типа отображать на карте, в случае одновременного отображения двух и более типов данных они отображаются различного цвета. Доступные типы данных:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Вид транспорта&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="3270" y="410" width="490" height="500" as="geometry" />
+          <mxGeometry x="1380" y="425" width="490" height="500" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-100" value="Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="140" width="450" height="30" as="geometry" />
+          <mxGeometry x="2010" y="142.5" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-101" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4100" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="2170" y="117.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-102" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4180" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="2250" y="117.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-103" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4020" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="2090" y="117.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-104" value="Mark&lt;div&gt;Report&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4260" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="2330" y="117.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-105" value="&lt;p&gt;&lt;strong&gt;Mark&lt;/strong&gt;, обозначают наличие объектов велоинфраструктуры (велопарковки, ремонтные станции, опасные или участки дороги где нужно отнестись с  осторожностью и т.д.). Также &lt;strong&gt;Mark&lt;/strong&gt; являются информацией для других  &lt;strong&gt;User&lt;/strong&gt;, &lt;strong&gt;Admin&lt;/strong&gt; чтобы настроить &lt;strong&gt;Mark&lt;/strong&gt; внеплановых  ремонтных работ.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="205" width="490" height="80" as="geometry" />
+          <mxGeometry x="2010" y="207.5" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-106" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Cоздание &lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="340" width="450" height="30" as="geometry" />
+          <mxGeometry x="2010" y="342.5" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-107" value="&lt;p&gt;&lt;strong&gt;Mark&lt;/strong&gt; могут быть созданы как &lt;strong&gt;User-ом&lt;/strong&gt; так и &lt;strong&gt;Admin-ом &lt;/strong&gt;с&lt;strong&gt; MarkManagment Permissions&lt;/strong&gt;. При создании указываются характеристики &lt;strong&gt;Mark&lt;/strong&gt;. Модерация не осуществляется.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип &lt;strong&gt;Mark&lt;/strong&gt;:&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Комментарий&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Происшествие&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Вело-инфратсруктура&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Описание&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Фото&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Текст&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Характеристика&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Публичные или не публичные&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Постоянные или временные (кроме Происшествий)&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;При указании &lt;strong&gt;Mark&lt;/strong&gt; как временной мы должны сохранить дату и время - когда ее нужно будет удалить (перестать показывать).&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="410" width="490" height="295" as="geometry" />
+          <mxGeometry x="2010" y="412.5" width="490" height="295" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-108" target="3WN8UBnGJbhX-x8cYGGZ-110">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-108" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="730" width="80" height="80" as="geometry" />
+          <mxGeometry x="2010" y="732.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-109" target="3WN8UBnGJbhX-x8cYGGZ-110">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-109" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="3940" y="880" width="80" height="80" as="geometry" />
+          <mxGeometry x="2010" y="882.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-110" target="3WN8UBnGJbhX-x8cYGGZ-114">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-110" value="Характеристики&lt;div&gt;метки&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4050" y="790" width="100" height="100" as="geometry" />
+          <mxGeometry x="2120" y="792.5" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-114" target="3WN8UBnGJbhX-x8cYGGZ-116">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-114" value="MarkCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="4200" y="810" width="150" height="60" as="geometry" />
+          <mxGeometry x="2270" y="812.5" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-116" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4400" y="800" width="80" height="80" as="geometry" />
+          <mxGeometry x="2470" y="802.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-118" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Редактирование&amp;nbsp;&lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="4570" y="340" width="450" height="30" as="geometry" />
+          <mxGeometry x="2000" y="1010" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-119" value="&lt;p&gt;&lt;strong&gt;User &lt;/strong&gt;может редактировать &lt;strong&gt;Mark&lt;/strong&gt; которые он создал в течение некоторого времени.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="4570" y="410" width="490" height="80" as="geometry" />
+          <mxGeometry x="2000" y="1080" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-120" target="3WN8UBnGJbhX-x8cYGGZ-125">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-120" value="MarkEditor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="4700" y="542.5" width="150" height="60" as="geometry" />
+          <mxGeometry x="2130" y="1212.5" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-121" target="3WN8UBnGJbhX-x8cYGGZ-120">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-121" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4560" y="490" width="80" height="80" as="geometry" />
+          <mxGeometry x="1990" y="1160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-122" target="3WN8UBnGJbhX-x8cYGGZ-120">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-122" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4560" y="580" width="80" height="80" as="geometry" />
+          <mxGeometry x="1990" y="1250" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-125" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4890" y="532.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="2320" y="1202.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-127" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Взаимодействие с&amp;nbsp;&lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5150" y="340" width="450" height="30" as="geometry" />
+          <mxGeometry x="2000" y="1401.25" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-128" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может пожаловаться на &lt;strong&gt;Mark. &lt;/strong&gt;В случае если жалоб отправлено несколько автоматически скрывать/удалять &lt;strong&gt;Mark. MarkReport - &lt;/strong&gt;могут просматривать&lt;strong&gt; Admin &lt;/strong&gt;с&lt;strong&gt; MarkManagment Permissions&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5150" y="410" width="490" height="80" as="geometry" />
+          <mxGeometry x="2000" y="1471.25" width="490" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-129" target="3WN8UBnGJbhX-x8cYGGZ-131">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-129" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5150" y="487.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="2000" y="1548.75" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-130" target="3WN8UBnGJbhX-x8cYGGZ-131">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-130" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5150" y="577.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="2000" y="1638.75" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-131" target="3WN8UBnGJbhX-x8cYGGZ-132">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-131" value="MartReportService" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="5300" y="545" width="150" height="60" as="geometry" />
+          <mxGeometry x="2150" y="1606.25" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-132" value="MarkReport" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5485" y="535" width="80" height="80" as="geometry" />
+          <mxGeometry x="2335" y="1596.25" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-136" value="Опросы/Тестирование" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="150" width="450" height="30" as="geometry" />
+          <mxGeometry x="2680" y="140" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-137" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="90" width="80" height="80" as="geometry" />
+          <mxGeometry x="3000" y="80" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-138" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6240" y="175" width="80" height="80" as="geometry" />
+          <mxGeometry x="3240" y="165" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-139" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="175" width="80" height="80" as="geometry" />
+          <mxGeometry x="3000" y="165" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-140" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6080" y="90" width="80" height="80" as="geometry" />
+          <mxGeometry x="3080" y="80" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-141" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6080" y="175" width="80" height="80" as="geometry" />
+          <mxGeometry x="3080" y="165" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-142" value="User&lt;div&gt;Route&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6160" y="90" width="80" height="80" as="geometry" />
+          <mxGeometry x="3160" y="80" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-143" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6160" y="175" width="80" height="80" as="geometry" />
+          <mxGeometry x="3160" y="165" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-144" value="Answer&lt;div&gt;Mark&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6240" y="90" width="80" height="80" as="geometry" />
+          <mxGeometry x="3240" y="80" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-145" value="&lt;p&gt;Цель - сбор общественного мнения. &lt;strong&gt;Questionnaire&lt;/strong&gt; - на схеме отмечается как &lt;strong&gt;Qst&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="270" width="640" height="80" as="geometry" />
+          <mxGeometry x="2680" y="260" width="640" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-146" value="&lt;p&gt;Состоит из &lt;strong&gt;Question&lt;/strong&gt;. Является своего рода редактируемой формой.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt; может быть нескольких типов.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тестирование.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Сбор общественного мнения.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Тестирование&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Предполагает набор &lt;strong&gt;Question&lt;/strong&gt; с предустановленными правильными &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Не может в себя включать некоторые типы &lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Развернутый&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Интерактивный&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Рейтинговая шкала.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Сбор общественного мнения.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Набор &lt;strong&gt;Question&lt;/strong&gt; без правильного варианта &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Может включать в себя любой типы &lt;strong&gt;Question&lt;/strong&gt; при условии что не установлен правильный вариант &lt;strong&gt;QuestionAnswer&lt;/strong&gt;.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="325" width="490" height="430" as="geometry" />
+          <mxGeometry x="2680" y="315" width="490" height="430" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-147" target="3WN8UBnGJbhX-x8cYGGZ-148">
           <mxGeometry relative="1" as="geometry" />
@@ -433,13 +433,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-147" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5690" y="840" width="80" height="80" as="geometry" />
+          <mxGeometry x="2690" y="830" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-148" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5820" y="760" width="80" height="80" as="geometry" />
+          <mxGeometry x="2820" y="750" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-149" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5960" y="760" width="80" height="80" as="geometry" />
+          <mxGeometry x="2960" y="750" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-150" target="3WN8UBnGJbhX-x8cYGGZ-155">
           <mxGeometry relative="1" as="geometry" />
@@ -451,82 +451,82 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-150" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5820" y="840" width="80" height="80" as="geometry" />
+          <mxGeometry x="2820" y="830" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-151" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5820" y="920" width="80" height="80" as="geometry" />
+          <mxGeometry x="2820" y="910" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-155" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5960" y="840" width="80" height="80" as="geometry" />
+          <mxGeometry x="2960" y="830" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-156" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5960" y="920" width="80" height="80" as="geometry" />
+          <mxGeometry x="2960" y="910" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-160" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание&lt;/span&gt; &lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1040" width="450" height="30" as="geometry" />
+          <mxGeometry x="2680" y="1030" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-161" value="&lt;p&gt;Может быть создан &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;При создании &lt;strong&gt;Questionnaire&lt;/strong&gt; указываются следующие характеристики:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Целевая аудитория&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип опроса. (&lt;em&gt;Сбор общественного мнения/тестирование&lt;/em&gt;)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Анонимное прохождение&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Сразу после сохранения имеет статус черновика. Всего меет 3 статуса:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Черновик&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Опубликован&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;В архиве&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1080" width="490" height="250" as="geometry" />
+          <mxGeometry x="2680" y="1070" width="490" height="250" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-162" value="Question" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1360" width="450" height="30" as="geometry" />
+          <mxGeometry x="2680" y="1350" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-163" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание &lt;/span&gt;&lt;strong&gt;Question&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1420" width="450" height="30" as="geometry" />
+          <mxGeometry x="2680" y="1410" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-164" value="&lt;p&gt;При создании указывается &lt;strong&gt;Questionnaire&lt;/strong&gt; к которому добавляется &lt;strong&gt;Question&lt;/strong&gt; и тип &lt;strong&gt;Question, &lt;/strong&gt;а также данные, набор которых зависит от типа &lt;strong&gt;Question.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Общими параметрами для всех &lt;strong&gt;Question&lt;/strong&gt; является:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Текст вопроса;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Флаг &quot;обязательный&quot;. Без &lt;strong&gt;UserAnswer,&lt;/strong&gt; на данный &lt;strong&gt;Question,&lt;/strong&gt; &lt;strong&gt;User &lt;/strong&gt;не может отправить &lt;strong&gt;Questionnaire&lt;/strong&gt; (т.е. успешно закончить прохождение);&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип &lt;strong&gt;Question&lt;/strong&gt;;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Изображение;&lt;strong&gt; &lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Question&lt;/strong&gt; может быть нескольких типов.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Развернутый.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Один из списка.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Несколько из списка.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Интерактивный (на карте).&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;&lt;strong&gt;AnswerRoute&lt;/strong&gt;&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;&lt;strong&gt;AnswerMark&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Рейтинговая шкала.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;В зависимости от типа &lt;strong&gt;Questionnaire &lt;/strong&gt;опрос или тестирование, &lt;strong&gt;&lt;em&gt;Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;обязан иметь как минимум один правильный&lt;/em&gt;&lt;strong&gt;&lt;em&gt; QuestionAnswer (для тестирования).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="1470" width="490" height="440" as="geometry" />
+          <mxGeometry x="2680" y="1460" width="490" height="440" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-165" target="3WN8UBnGJbhX-x8cYGGZ-168">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-165" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="2020" width="80" height="80" as="geometry" />
+          <mxGeometry x="2680" y="2010" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-166" target="3WN8UBnGJbhX-x8cYGGZ-169">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-166" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5800" y="2020" width="80" height="80" as="geometry" />
+          <mxGeometry x="2800" y="2010" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-168" target="3WN8UBnGJbhX-x8cYGGZ-169">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-168" value="Тип и данные&lt;div&gt;&lt;b&gt;Question&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="5760" y="1930" width="120" height="60" as="geometry" />
+          <mxGeometry x="2760" y="1920" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-169" value="QuestionCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="1990" width="120" height="60" as="geometry" />
+          <mxGeometry x="3000" y="1980" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-173" value="&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;*&lt;/strong&gt; –&lt;em&gt; Доступен только для &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; с типом &quot;сбор общественного мнения&quot;.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; Развернутый &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Текстовое поле для &lt;strong&gt;UserAnswer&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; Интерактивный &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question. &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;В качестве &lt;strong&gt;UserAnswer&lt;/strong&gt; - может выступать &lt;strong&gt;&lt;em&gt;AnswerMark&lt;/em&gt; &lt;/strong&gt;или&lt;strong&gt; AnswerRoute. Admin &lt;/strong&gt;- выбирает &lt;strong&gt;область&lt;/strong&gt; на карте которая доступна для взаимодействия &lt;strong&gt;User-у. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;*&lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt; Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;c рейтинговой шкалой. &lt;/em&gt;&lt;/p&gt;&lt;p&gt;В качестве &lt;strong&gt;UserAnswer&lt;/strong&gt; -  значение рейтинга. При создании указываются минимальное/максимальное значение шкалы.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Один из списка &lt;/em&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Выбор из переданных &lt;strong&gt;QuestionAnswer. User &lt;/strong&gt;может выбрать только один &lt;strong&gt;QuestionAnswer &lt;/strong&gt;в качестве&lt;strong&gt; UserAnswer&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;В случае &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;тестирования&lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt; обязательно нужно пометить один &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;QuestionAnswer&lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt; как правильный.&lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Несколько из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt; Question.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Выбор из переданных &lt;strong&gt;QuestionAnswer. User &lt;/strong&gt;может выбрать несколько &lt;strong&gt;QuestionAnswer &lt;/strong&gt;в качестве&lt;strong&gt; UserAnswer. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;В случае тестирования обязательно нужно пометить как минимум один &lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;QuestionAnswer &lt;/em&gt;&lt;/strong&gt;&lt;em style=&quot;color: rgb(242, 71, 38);&quot;&gt;как правильный&lt;/em&gt;&lt;strong style=&quot;color: rgb(242, 71, 38);&quot;&gt;&lt;em&gt;.&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="2150" width="490" height="510" as="geometry" />
+          <mxGeometry x="2680" y="2140" width="490" height="510" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-174" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Прохождение &lt;/span&gt;&lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;User&lt;/strong&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;-ом&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="2700" width="450" height="30" as="geometry" />
+          <mxGeometry x="2680" y="2690" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-175" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может пройти &lt;strong&gt;Questionnaire&lt;/strong&gt;, если он подходит под целевую аудиторию &lt;strong&gt;Questionnaire. &lt;/strong&gt;В процессе прохождения &lt;strong&gt;Questionnaire&lt;/strong&gt; система сохраняет &lt;strong&gt;UserAnswer&lt;/strong&gt; на каждый &lt;strong&gt;Question. UserAnswer - &lt;/strong&gt;доступен для просмотра в статистике даже после того как &lt;strong&gt;Question&lt;/strong&gt; был удален&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Варианты &lt;strong&gt;UserAnswer&lt;/strong&gt; зависят от типа &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Для каждого типа &lt;strong&gt;QuestionAnswer&lt;/strong&gt; существует свой тип &lt;strong&gt;UserAnswer&lt;/strong&gt;.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="2760" width="490" height="140" as="geometry" />
+          <mxGeometry x="2680" y="2750" width="490" height="140" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-176" target="3WN8UBnGJbhX-x8cYGGZ-179">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-176" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="2920" width="80" height="80" as="geometry" />
+          <mxGeometry x="2680" y="2910" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-177" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;Данные об ответе на &lt;b style=&quot;font-size: 11px;&quot;&gt;Question&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="5760" y="2930" width="120" height="60" as="geometry" />
+          <mxGeometry x="2760" y="2920" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-178" target="3WN8UBnGJbhX-x8cYGGZ-179">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-178" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6010" y="2920" width="80" height="80" as="geometry" />
+          <mxGeometry x="3010" y="2910" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-185" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-179" target="3WN8UBnGJbhX-x8cYGGZ-184">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-179" value="UserAnswerCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="5840" y="3070" width="120" height="60" as="geometry" />
+          <mxGeometry x="2840" y="3060" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.469;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-177" target="3WN8UBnGJbhX-x8cYGGZ-179">
           <mxGeometry relative="1" as="geometry" />
@@ -545,95 +545,95 @@
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=-0.333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-184" target="3WN8UBnGJbhX-x8cYGGZ-199">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="5900" y="3499.9999999999995" as="targetPoint" />
+            <mxPoint x="2900" y="3489.9999999999995" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-184" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5860" y="3270" width="80" height="80" as="geometry" />
+          <mxGeometry x="2860" y="3260" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-186" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5670" y="3170" width="80" height="80" as="geometry" />
+          <mxGeometry x="2670" y="3160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-187" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6050" y="3170" width="80" height="80" as="geometry" />
+          <mxGeometry x="3050" y="3160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-188" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="6050" y="3400" width="80" height="80" as="geometry" />
+          <mxGeometry x="3050" y="3390" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-189" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5670" y="3400" width="80" height="80" as="geometry" />
+          <mxGeometry x="2670" y="3390" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-191" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Рейтинговая шкала&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="3100" width="180" height="30" as="geometry" />
+          <mxGeometry x="3000" y="3090" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-193" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Развернутый&amp;nbsp;&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5620" y="3100" width="180" height="30" as="geometry" />
+          <mxGeometry x="2620" y="3090" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-195" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;тип&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Интерактивный&amp;nbsp;&lt;/em&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5620" y="3330" width="180" height="30" as="geometry" />
+          <mxGeometry x="2620" y="3320" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-197" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Один из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="6000" y="3330" width="180" height="30" as="geometry" />
+          <mxGeometry x="3000" y="3320" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-198" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5810" y="3510" width="180" height="180" as="geometry" />
+          <mxGeometry x="2810" y="3500" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-199" value="&lt;p&gt;&lt;strong&gt;&lt;em&gt;Question&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; тип &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Несколько из списка&lt;/em&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="5810" y="3520" width="180" height="30" as="geometry" />
+          <mxGeometry x="2810" y="3510" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-200" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="5860" y="3590" width="80" height="80" as="geometry" />
+          <mxGeometry x="2860" y="3580" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-209" value="&lt;p&gt;На основе пройденных &lt;strong&gt;Questionnaire&lt;/strong&gt; собирается статистика по каждому &lt;strong&gt;Questionnaire&lt;/strong&gt;. Статистика доступна для просмотра &lt;strong&gt;Admin QuestionnaireManagment Permissions.&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="5680" y="3720" width="450" height="80" as="geometry" />
+          <mxGeometry x="2680" y="3710" width="450" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-210" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Статистика по пройденным&lt;/span&gt; &lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;User-&lt;/strong&gt;ами" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6210" y="2700" width="620" height="30" as="geometry" />
+          <mxGeometry x="3210" y="2690" width="620" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-211" value="&lt;p&gt;&lt;strong&gt;Admin&lt;/strong&gt; может просматривать статистику по пройденным &lt;strong&gt;&lt;em&gt;Questionnaire&lt;/em&gt;&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6210" y="2760" width="490" height="20" as="geometry" />
+          <mxGeometry x="3210" y="2750" width="490" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-212" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Удаление\Редактирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Question&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6280" y="1420" width="450" height="30" as="geometry" />
+          <mxGeometry x="3280" y="1410" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-213" value="&lt;p&gt;Есть возможность редактирования/удаления &lt;strong&gt;Question &lt;/strong&gt;до момента пока&lt;strong&gt; Questionnaire &lt;/strong&gt;находится в статусе черновика.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6280" y="1480" width="490" height="20" as="geometry" />
+          <mxGeometry x="3280" y="1470" width="490" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-214" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Редактирование &lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6280" y="1040" width="450" height="30" as="geometry" />
+          <mxGeometry x="3280" y="1030" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-215" value="&lt;p&gt;Может быть отредактирован &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Редактированию подлежат только &lt;strong&gt;Questionnaire&lt;/strong&gt; в статусе &quot;черновик&quot;. При редактировании доступно добавление/удаление/редактирование &lt;strong&gt;Question&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Подробнее в разделе создание и редактирование &lt;strong&gt;Question.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6280" y="1100" width="490" height="110" as="geometry" />
+          <mxGeometry x="3280" y="1090" width="490" height="110" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-216" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Удаление&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1040" width="450" height="30" as="geometry" />
+          <mxGeometry x="3800" y="1030" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-217" value="&lt;p&gt;Не может быть удален. Может быть только архивирован.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1100" width="490" height="20" as="geometry" />
+          <mxGeometry x="3800" y="1090" width="490" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-218" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Архивирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1170" width="450" height="30" as="geometry" />
+          <mxGeometry x="3800" y="1160" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-219" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Может быть перемещен в архив &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;. Может быть скопирован новый из архива.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1220" width="490" height="40" as="geometry" />
+          <mxGeometry x="3800" y="1210" width="490" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-220" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Публикация&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1310" width="450" height="30" as="geometry" />
+          <mxGeometry x="3800" y="1300" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-221" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Может быть опубликован &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Перед публикацией проверяется, что  &lt;strong&gt;Questionnaire&lt;/strong&gt; является валидным.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="6800" y="1360" width="490" height="40" as="geometry" />
+          <mxGeometry x="3800" y="1350" width="490" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-222" value="Path &lt;span style=&quot;font-weight: normal;&quot;&gt;(трек)&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="7660" y="140" width="450" height="30" as="geometry" />
+          <mxGeometry x="4390" y="167.5" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-223" value="Path" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="7820" y="115" width="80" height="80" as="geometry" />
+          <mxGeometry x="4550" y="142.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-226" value="&lt;p&gt;&lt;strong&gt;Path&lt;/strong&gt; - это сохранённый &lt;strong&gt;User-ом&lt;/strong&gt; пройденный путь. При записи &lt;strong&gt;Path User &lt;/strong&gt;указывает какой вид транспорта использует для перемещения из списка доступных:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Велосипед&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средство индивидуальной мобильности&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Другое&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;При записи &lt;strong&gt;Path&lt;/strong&gt; &lt;strong&gt;User&lt;/strong&gt; указывает точки интереса. Это помогает картографическому приложению построить более точный &lt;em&gt;маршрут&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;На основе &lt;strong&gt;Path&lt;/strong&gt; строится общая статистика:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Общий пройденный путь &lt;strong&gt;User-ами&lt;/strong&gt;.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средняя скорость всех &lt;strong&gt;User-ов&lt;/strong&gt;.&lt;strong&gt; &lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Вид траспорта&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тепловая карта&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="7660" y="285" width="490" height="295" as="geometry" />
+          <mxGeometry x="4390" y="312.5" width="490" height="295" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-227" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Добавление &lt;/span&gt;&lt;strong&gt;Path&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="7650" y="610" width="450" height="30" as="geometry" />
+          <mxGeometry x="4380" y="637.5" width="450" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
