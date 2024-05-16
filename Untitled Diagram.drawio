@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T14:10:10.888Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="4REbMV6dt62hCG1GqClr" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T14:31:06.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="biF9aCE0viYUQmo_Vp0z" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel dx="4609" dy="1640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2415" dy="1230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -607,6 +607,21 @@
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-216" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Удаление&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
           <mxGeometry x="6800" y="1040" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-217" value="&lt;p&gt;Не может быть удален. Может быть только архивирован.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1100" width="490" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-218" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Архивирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1170" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-219" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Может быть перемещен в архив &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;. Может быть скопирован новый из архива.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1220" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-220" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Публикация&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1310" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-221" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Может быть опубликован &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Перед публикацией проверяется, что  &lt;strong&gt;Questionnaire&lt;/strong&gt; является валидным.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="6800" y="1360" width="490" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
