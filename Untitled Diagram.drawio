@@ -1,9 +1,461 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T12:49:56.072Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.4.2" etag="ajP8EGkxywA65PPHC6zG" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T13:30:19.811Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="pXfln2jGh6gIA--6uYpz" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel>
+    <mxGraphModel dx="3771" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-2" value="&lt;strong style=&quot;font-size: 28px;&quot;&gt;Аутентификация / Регистрация&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="30" y="140" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-5" target="3WN8UBnGJbhX-x8cYGGZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-5" target="3WN8UBnGJbhX-x8cYGGZ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-5" target="3WN8UBnGJbhX-x8cYGGZ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-5" value="Credentials" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-6" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-7" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-10" value="&lt;p style=&quot;line-height: 10%;&quot;&gt;&lt;strong style=&quot;background-color: transparent;&quot;&gt;Type:&lt;/strong&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 10%;&quot;&gt; - логин/пароль&lt;/p&gt;&lt;p style=&quot;line-height: 10%;&quot;&gt;  - ЕГПП&lt;/p&gt;&lt;p style=&quot;line-height: 10%;&quot;&gt;- номер телефона&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="225" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-12" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;User&lt;/span&gt;&lt;span style=&quot;font-size: 25px; font-weight: normal;&quot;&gt; Аутентификация / Регистрация&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="20" y="535" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-13" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-14" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;User &lt;/strong&gt;может войти в систему только через аутентификацию через сервис ЕГПП.&lt;/p&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;Если пользователь входит в систему VELO впервые мы должны создать нового &lt;strong style=&quot;font-size: 14px;&quot;&gt;User.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="610" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-15" target="3WN8UBnGJbhX-x8cYGGZ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-15" value="ЕГПП Auth Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-16" value="ЕГПП" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-19" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="3WN8UBnGJbhX-x8cYGGZ-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="880" as="sourcePoint" />
+            <mxPoint x="160" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-21" value="User exist in our system?" style="rhombus;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="205" y="780" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-25" value="AuthUser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-26" value="UserCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-21" target="3WN8UBnGJbhX-x8cYGGZ-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="920" as="sourcePoint" />
+            <mxPoint x="330" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-28" value="NOT EXIST" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontSize=9;" connectable="0" vertex="1" parent="3WN8UBnGJbhX-x8cYGGZ-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" target="3WN8UBnGJbhX-x8cYGGZ-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="244.48" y="780" as="sourcePoint" />
+            <mxPoint x="304.48" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="244" y="781" />
+              <mxPoint x="244" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-30" value="EXIST" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontSize=9;" connectable="0" vertex="1" parent="3WN8UBnGJbhX-x8cYGGZ-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-31" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;Admin&lt;/span&gt;&lt;span style=&quot;font-size: 25px; font-weight: normal;&quot;&gt; Аутентификация / Регистрация&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="680" y="535" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-32" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-33" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Admin &lt;/strong&gt;авторизуется в системе&lt;strong&gt; (логин/пароль)&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="680" y="610" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-34" target="3WN8UBnGJbhX-x8cYGGZ-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-34" value="Auth Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-35" value="AuthAdmin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-37" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Admin &lt;/strong&gt;не может быть зарегистрирован в системе. Создание &lt;strong&gt;Admin-а &amp;nbsp;&lt;/strong&gt;осуществляется только &lt;strong&gt;SuperAdmin&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="680" y="730" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-38" target="3WN8UBnGJbhX-x8cYGGZ-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-39" target="3WN8UBnGJbhX-x8cYGGZ-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-39" value="AdminCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-40" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="960" y="820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-43" value="Ролевая модель" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="140" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-44" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-45" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="125" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-46" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-47" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="135" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-48" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Базовая &lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="255" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-49" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="235" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-50" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Role&lt;/strong&gt; &lt;strong&gt;SuperAdmin&lt;/strong&gt; прописана константой - имеет все доступы. Создается только командой - может существовать только один  &lt;strong&gt;Admin&lt;/strong&gt; - с ролью &lt;strong&gt;SuperAdmin&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="330" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-51" target="3WN8UBnGJbhX-x8cYGGZ-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-51" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Admin&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(&lt;b style=&quot;&quot;&gt;Super Admin&lt;/b&gt;)&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-52" target="3WN8UBnGJbhX-x8cYGGZ-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-52" value="GetPermissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-56" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1775" y="430" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-57" value="Permissions&lt;div&gt;(&lt;b&gt;all&lt;/b&gt;)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1765" y="440" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-59" value="Permissions" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="565" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-60" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Permissions&lt;/strong&gt; набор предопределенных прав доступа. Не может быть создан, редактироваться и удаляться &lt;strong&gt;Admin-om&lt;/strong&gt;. Набор &lt;strong&gt;Permissions &lt;/strong&gt;задается только разработчиками.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="640" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-61" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="545" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-62" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="555" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-63" value="&lt;p style=&quot;font-size: 14px;&quot;&gt;&lt;strong&gt;Permissions:&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;UserManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;MarkManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;QuestionnaireManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;StatisticManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;NewsManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;EventManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;RepairManagement&lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;&lt;strong&gt;FeedbackManagement&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="780" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-65" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="255" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-66" value="&lt;p&gt;При создании &lt;strong&gt;Role&lt;/strong&gt; пользователя указываются все &lt;strong&gt;Permissions&lt;/strong&gt; которые может выполнять &lt;strong&gt;Admin&lt;/strong&gt; данной &lt;strong&gt;Role&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может создавать &lt;strong&gt;Role.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="315" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-67" target="3WN8UBnGJbhX-x8cYGGZ-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-67" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2050" y="435" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-68" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="445" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-69" target="3WN8UBnGJbhX-x8cYGGZ-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-69" value="RoleCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="435" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-73" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2390" y="425" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-75" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Назначение &lt;/span&gt;&lt;strong&gt;Role &lt;/strong&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;для&lt;/span&gt;&lt;strong&gt; Admin&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="570" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-76" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2390" y="545" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-77" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="545" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-78" value="&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может назначать роли другим &lt;strong&gt;Admin.&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="640" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-79" target="3WN8UBnGJbhX-x8cYGGZ-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-79" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-80" target="3WN8UBnGJbhX-x8cYGGZ-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-80" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-81" value="AdminRoleSetter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="790" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-84" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Редактирование&amp;nbsp;&lt;/span&gt;&lt;strong&gt;Role&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="255" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-85" value="&lt;p&gt;При редактировании &lt;strong&gt;Role&lt;/strong&gt; обновляются все&lt;strong&gt; Permissions&lt;/strong&gt; для данной &lt;strong&gt;Role&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Только&lt;strong&gt; SuperAdmin &lt;/strong&gt;может редактировать &lt;strong&gt;Role.&lt;/strong&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="315" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-86" target="3WN8UBnGJbhX-x8cYGGZ-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-86" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-87" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="570" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-88" target="3WN8UBnGJbhX-x8cYGGZ-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-88" value="Permissions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="580" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-91" target="3WN8UBnGJbhX-x8cYGGZ-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-91" value="RolePermissionsUpdater" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2800" y="510" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-92" value="Role" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2990" y="500" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-96" value="User" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="140" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-97" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Добавление&lt;/span&gt;&lt;strong&gt; User-a&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="255" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-98" value="&lt;p&gt;User добавляется автоматически в момент регистрации.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="315" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-99" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может указать &lt;em&gt;область приватности - &lt;/em&gt;область на карте которая будет видна только &lt;strong&gt;User-у &lt;/strong&gt;который создает &lt;em&gt;область приватности&lt;/em&gt;&lt;strong&gt;&lt;em&gt; &lt;/em&gt;&lt;/strong&gt;и не видна другим &lt;strong&gt;User-ам&lt;/strong&gt;. &lt;em&gt;Область приватности - &lt;/em&gt;состоит из&lt;em&gt; &lt;/em&gt;окружности разных стандартных радиусов, которые смещаются единожды при создании относительно выбранного пользователем центра, во избежание определения  точки, которую пользователь предпочёл скрыть. Точки трека внутри данной окружности не отображаются при просмотре &lt;strong&gt;Path&lt;/strong&gt; другими &lt;strong&gt;User.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Редактирование личных данные &lt;strong&gt;User&lt;/strong&gt;-a&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;User-name&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;ФИО&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Место рождения&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Дата рождения&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Пол (мужской или женский)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Район города (выбор из списка), возможен выбор нескольких районов.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Тепловая карта интенсивности личных поездок&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Отображать цветом каждый &lt;strong&gt;Path&lt;/strong&gt; &lt;strong&gt;User-a.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Отображение  тепловой карты должно индицировать наиболее популярные &lt;strong&gt;Path,&lt;/strong&gt; по количеству проездов по определенном участку. &lt;strong&gt;User&lt;/strong&gt; может выбирать данные какого типа отображать на карте, в случае одновременного отображения двух и более типов данных они отображаются различного цвета. Доступные типы данных:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Вид транспорта&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="410" width="490" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-100" value="Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="140" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-101" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4100" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-102" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4180" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-103" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4020" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-104" value="Mark&lt;div&gt;Report&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4260" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-105" value="&lt;p&gt;&lt;strong&gt;Mark&lt;/strong&gt;, обозначают наличие объектов велоинфраструктуры (велопарковки, ремонтные станции, опасные или участки дороги где нужно отнестись с  осторожностью и т.д.). Также &lt;strong&gt;Mark&lt;/strong&gt; являются информацией для других  &lt;strong&gt;User&lt;/strong&gt;, &lt;strong&gt;Admin&lt;/strong&gt; чтобы настроить &lt;strong&gt;Mark&lt;/strong&gt; внеплановых  ремонтных работ.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="205" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-106" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Cоздание &lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="340" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-107" value="&lt;p&gt;&lt;strong&gt;Mark&lt;/strong&gt; могут быть созданы как &lt;strong&gt;User-ом&lt;/strong&gt; так и &lt;strong&gt;Admin-ом &lt;/strong&gt;с&lt;strong&gt; MarkManagment Permissions&lt;/strong&gt;. При создании указываются характеристики &lt;strong&gt;Mark&lt;/strong&gt;. Модерация не осуществляется.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип &lt;strong&gt;Mark&lt;/strong&gt;:&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Комментарий&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Происшествие&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Вело-инфратсруктура&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Описание&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Фото&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Текст&lt;/li&gt;&lt;/ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Характеристика&lt;/li&gt;&lt;ul&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Публичные или не публичные&lt;/li&gt;&lt;li class=&quot;ql-indent-1&quot; data-list=&quot;bullet&quot;&gt;Постоянные или временные (кроме Происшествий)&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;При указании &lt;strong&gt;Mark&lt;/strong&gt; как временной мы должны сохранить дату и время - когда ее нужно будет удалить (перестать показывать).&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="410" width="490" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-108" target="3WN8UBnGJbhX-x8cYGGZ-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-108" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="730" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-109" target="3WN8UBnGJbhX-x8cYGGZ-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-109" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="3940" y="880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-110" target="3WN8UBnGJbhX-x8cYGGZ-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-110" value="Характеристики&lt;div&gt;метки&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4050" y="790" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-114" target="3WN8UBnGJbhX-x8cYGGZ-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-114" value="MarkCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4200" y="810" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-116" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4400" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-118" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Редактирование&amp;nbsp;&lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="4570" y="340" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-119" value="&lt;p&gt;&lt;strong&gt;User &lt;/strong&gt;может редактировать &lt;strong&gt;Mark&lt;/strong&gt; которые он создал в течение некоторого времени.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="4570" y="410" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-120" target="3WN8UBnGJbhX-x8cYGGZ-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-120" value="MarkEditor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4700" y="542.5" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-121" target="3WN8UBnGJbhX-x8cYGGZ-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-121" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4560" y="490" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-122" target="3WN8UBnGJbhX-x8cYGGZ-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-122" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4560" y="580" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-125" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="4890" y="532.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-127" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Взаимодействие с&amp;nbsp;&lt;/span&gt;Mark" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="340" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-128" value="&lt;p&gt;&lt;strong&gt;User&lt;/strong&gt; может пожаловаться на &lt;strong&gt;Mark. &lt;/strong&gt;В случае если жалоб отправлено несколько автоматически скрывать/удалять &lt;strong&gt;Mark. MarkReport - &lt;/strong&gt;могут просматривать&lt;strong&gt; Admin &lt;/strong&gt;с&lt;strong&gt; MarkManagment Permissions&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="410" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-129" target="3WN8UBnGJbhX-x8cYGGZ-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-129" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="487.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-130" target="3WN8UBnGJbhX-x8cYGGZ-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-130" value="Mark" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="577.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-131" target="3WN8UBnGJbhX-x8cYGGZ-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-131" value="MartReportService" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5300" y="545" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-132" value="MarkReport" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5485" y="535" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-136" value="Опросы/Тестирование" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="150" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-137" value="User" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-138" value="Admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6240" y="175" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-139" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6000" y="175" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-140" value="User&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6080" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-141" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6080" y="175" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-142" value="User&lt;div&gt;Route&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6160" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-143" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6160" y="175" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-144" value="Answer&lt;div&gt;Mark&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="6240" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-145" value="&lt;p&gt;Цель - сбор общественного мнения. &lt;strong&gt;Questionnaire&lt;/strong&gt; - на схеме отмечается как &lt;strong&gt;Qst&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="270" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-146" value="&lt;p&gt;Состоит из &lt;strong&gt;Question&lt;/strong&gt;. Является своего рода редактируемой формой.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Questionnaire&lt;/strong&gt; может быть нескольких типов.&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тестирование.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Сбор общественного мнения.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Тестирование&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Предполагает набор &lt;strong&gt;Question&lt;/strong&gt; с предустановленными правильными &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Не может в себя включать некоторые типы &lt;strong&gt;Question&lt;/strong&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Развернутый&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Интерактивный&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Рейтинговая шкала.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Сбор общественного мнения.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Набор &lt;strong&gt;Question&lt;/strong&gt; без правильного варианта &lt;strong&gt;QuestionAnswer&lt;/strong&gt;. Может включать в себя любой типы &lt;strong&gt;Question&lt;/strong&gt; при условии что не установлен правильный вариант &lt;strong&gt;QuestionAnswer&lt;/strong&gt;.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="325" width="490" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-147" target="3WN8UBnGJbhX-x8cYGGZ-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-147" target="3WN8UBnGJbhX-x8cYGGZ-150">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-147" target="3WN8UBnGJbhX-x8cYGGZ-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-147" value="Qst" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5690" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-148" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5820" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-149" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5960" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-150" target="3WN8UBnGJbhX-x8cYGGZ-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-150" target="3WN8UBnGJbhX-x8cYGGZ-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3WN8UBnGJbhX-x8cYGGZ-150" target="3WN8UBnGJbhX-x8cYGGZ-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-150" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5820" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-151" value="Question" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5820" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-155" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5960" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-156" value="Question&lt;div&gt;Answer&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="5960" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-160" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Создание&lt;/span&gt; &lt;strong&gt;Questionnaire&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="5690" y="1040" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-161" value="&lt;p&gt;Может быть создан &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;При создании &lt;strong&gt;Questionnaire&lt;/strong&gt; указываются следующие характеристики:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Целевая аудитория&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тип опроса. (&lt;em&gt;Сбор общественного мнения/тестирование&lt;/em&gt;)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Анонимное прохождение&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Сразу после сохранения имеет статус черновика. Всего меет 3 статуса:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Черновик&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Опубликован&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;В архиве&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="5680" y="1080" width="490" height="250" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
