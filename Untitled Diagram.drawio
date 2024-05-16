@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T14:31:06.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="biF9aCE0viYUQmo_Vp0z" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T14:33:56.277Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="CXzwDMP3qufrrTnpqL9b" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel dx="2415" dy="1230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1380" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -622,6 +622,18 @@
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-221" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Может быть опубликован &lt;strong&gt;Admin&lt;/strong&gt; с &lt;strong&gt;QuestionnaireManagment&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Перед публикацией проверяется, что  &lt;strong&gt;Questionnaire&lt;/strong&gt; является валидным.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="6800" y="1360" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-222" value="Path &lt;span style=&quot;font-weight: normal;&quot;&gt;(трек)&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
+          <mxGeometry x="7660" y="140" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-223" value="Path" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="7820" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-226" value="&lt;p&gt;&lt;strong&gt;Path&lt;/strong&gt; - это сохранённый &lt;strong&gt;User-ом&lt;/strong&gt; пройденный путь. При записи &lt;strong&gt;Path User &lt;/strong&gt;указывает какой вид транспорта использует для перемещения из списка доступных:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Велосипед&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средство индивидуальной мобильности&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Другое&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;При записи &lt;strong&gt;Path&lt;/strong&gt; &lt;strong&gt;User&lt;/strong&gt; указывает точки интереса. Это помогает картографическому приложению построить более точный &lt;em&gt;маршрут&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;На основе &lt;strong&gt;Path&lt;/strong&gt; строится общая статистика:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Общий пройденный путь &lt;strong&gt;User-ами&lt;/strong&gt;.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средняя скорость всех &lt;strong&gt;User-ов&lt;/strong&gt;.&lt;strong&gt; &lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Вид траспорта&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тепловая карта&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="7660" y="285" width="490" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-227" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Добавление &lt;/span&gt;&lt;strong&gt;Path&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="7650" y="610" width="450" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
