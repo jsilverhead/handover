@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T14:46:39.130Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="OS_BCXg9QMhPvyLbq3Hz" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-16T14:48:22.489Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="a_SPpuE-04Gstrxrjg-L" version="24.4.2" type="github">
   <diagram name="Page-1" id="-xYmk4XUsjklXfc8z8qg">
-    <mxGraphModel dx="8296" dy="2952" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5926" dy="2109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -624,16 +624,25 @@
           <mxGeometry x="3800" y="1350" width="490" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-222" value="Path &lt;span style=&quot;font-weight: normal;&quot;&gt;(трек)&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="4390" y="167.5" width="450" height="30" as="geometry" />
+          <mxGeometry x="4350" y="167.5" width="450" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-223" value="Path" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="4550" y="142.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="4510" y="142.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-226" value="&lt;p&gt;&lt;strong&gt;Path&lt;/strong&gt; - это сохранённый &lt;strong&gt;User-ом&lt;/strong&gt; пройденный путь. При записи &lt;strong&gt;Path User &lt;/strong&gt;указывает какой вид транспорта использует для перемещения из списка доступных:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Велосипед&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средство индивидуальной мобильности&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Другое&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;При записи &lt;strong&gt;Path&lt;/strong&gt; &lt;strong&gt;User&lt;/strong&gt; указывает точки интереса. Это помогает картографическому приложению построить более точный &lt;em&gt;маршрут&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;На основе &lt;strong&gt;Path&lt;/strong&gt; строится общая статистика:&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;Общий пройденный путь &lt;strong&gt;User-ами&lt;/strong&gt;.&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Средняя скорость всех &lt;strong&gt;User-ов&lt;/strong&gt;.&lt;strong&gt; &lt;/strong&gt;&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Вид траспорта&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;Тепловая карта&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="4390" y="312.5" width="490" height="295" as="geometry" />
+          <mxGeometry x="4350" y="312.5" width="490" height="295" as="geometry" />
         </mxCell>
         <mxCell id="3WN8UBnGJbhX-x8cYGGZ-227" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Добавление &lt;/span&gt;&lt;strong&gt;Path&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="4380" y="637.5" width="450" height="30" as="geometry" />
+          <mxGeometry x="4340" y="637.5" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-228" value="&lt;p&gt;&lt;strong&gt;Path&lt;/strong&gt; может быть создан только на основе пройденого пути&lt;strong&gt; User-а&lt;/strong&gt;. После того как &lt;strong&gt;User &lt;/strong&gt;начал движение, по &lt;strong&gt;Route &lt;/strong&gt;или просто свободное перемещение без &lt;strong&gt;Route&lt;/strong&gt;, начинаем сохранять координаты пользователя с определенной частотой. Так же сохраняем скорость с которой &lt;strong&gt;User&lt;/strong&gt; двигался на участке пути.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;В момент движение и записи &lt;strong&gt;Path&lt;/strong&gt;. Статус &lt;strong&gt;User-a&lt;/strong&gt; меняется на &lt;em&gt;&quot;в пути&quot;&lt;/em&gt;. В момент завершения - статус &lt;em&gt;&quot;оффлайн&quot;&lt;/em&gt;.&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="4340" y="690" width="490" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-229" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Загрузка &lt;/span&gt;&lt;strong&gt;Path&lt;/strong&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="4340" y="870" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3WN8UBnGJbhX-x8cYGGZ-230" value="&lt;p&gt;Загрузка маршрута в форматах:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li data-list=&quot;bullet&quot;&gt;GPX (GPS eXchange Format)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;KML (Keyhole Markup Language)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;KMZ (Keyhole Markup Language (в архиве))&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;TCX (Training Center XML)&lt;/li&gt;&lt;li data-list=&quot;bullet&quot;&gt;FIT (GIS файл устройств Garmin)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="4340" y="920" width="490" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
