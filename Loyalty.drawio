@@ -1,9 +1,42 @@
-<mxfile host="app.diagrams.net" modified="2024-05-17T08:36:42.262Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.4.2" etag="HWsgqm633-n8C9RYWdBn" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-17T08:39:37.514Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="6KQCqfe70MSftEbfzPvt" version="24.4.3" type="github">
   <diagram name="Page-1" id="3LspEZ6UrVPtPHhB3D5p">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3AA2hyl5XIKiU2v8SSu--1" target="3AA2hyl5XIKiU2v8SSu--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3AA2hyl5XIKiU2v8SSu--1" target="3AA2hyl5XIKiU2v8SSu--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3AA2hyl5XIKiU2v8SSu--1" target="3AA2hyl5XIKiU2v8SSu--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3AA2hyl5XIKiU2v8SSu--1" target="3AA2hyl5XIKiU2v8SSu--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3AA2hyl5XIKiU2v8SSu--1" target="3AA2hyl5XIKiU2v8SSu--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--1" value="Loyalty" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="270" y="40" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--2" value="ЛК Системного Администратора" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--3" value="ЛК Администратора Слона" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--4" value="ЛК Агента" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--5" value="Мобильное приложение&lt;div style=&quot;font-size: 11px;&quot;&gt;(клиент)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="850" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3AA2hyl5XIKiU2v8SSu--6" value="Вебсайт&lt;div&gt;(клиент)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
